@@ -27,4 +27,3 @@ document.querySelector("#dice").addEventListener("click", () => {
 	}
 
 })
-
