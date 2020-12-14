@@ -1,5 +1,4 @@
 let score = 0;
-let locationPawn = 0;
 
 const scoreboard = (element) => {
 
@@ -23,30 +22,5 @@ const scoreboard = (element) => {
 
     return score;
 
+    // Add document.get element innerhtml to add score to mainpage 
 };
-
-
-
-
-function rollDice() {
-    var randomDice = Math.floor(6 * Math.random()) + 1;
-    return randomDice;
-}
-
-
-const pawnLocation = () => {
-
-    locationPawn = rollDice();
-
-    let pawnPlace = document.getElementById(locationPawn);
-
-    let className = pawnPlace.className;
-
-    scoreboard(className);
-
-    console.log(score);
-
-}
-
-
-document.getElementById("dice").addEventListener("click", pawnLocation);
