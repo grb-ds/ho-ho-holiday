@@ -6,21 +6,58 @@ table 	{
 	margin-left: auto;
     margin-right: auto;
 		}
-.td1	{ 
+
+.td0	{ 
 	border: 0px;
 	
 	
 		}
-
+.start{
+	color: red;
+}
 
 	
-.td2	{ 
+.greensquare	{ 
 	width: 300px;
 	height: 85px;
 	background-color: green;
 	color: exit;
-;
 		}
+
+.bluesquare	{ 
+	width: 300px;
+	height: 85px;
+	background-color: blue;
+	color: exit;
+		}
+
+.purplesquare	{ 
+	width: 300px;
+	height: 85px;
+	background-color: purple;
+	color: exit;
+		}
+
+.yellowsquare	{ 
+	width: 300px;
+	height: 85px;
+	background-color: yellow;
+	color: exit;
+		}
+
+.orangesquare	{ 
+	width: 300px;
+	height: 85px;
+	background-color: orange;
+	color: exit;
+		}
+
+.end{
+	color: red;
+}
+
+
+		
 
 h1		{
 	
