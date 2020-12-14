@@ -25,5 +25,4 @@ document.querySelector("#dice").addEventListener("click", () => {
 		scorePlayerOne == 25;
 		document.getElementById(`${scorePlayerOne}`).innerHTML =  '<span class="dot"></span>';
 	}
-
 })
