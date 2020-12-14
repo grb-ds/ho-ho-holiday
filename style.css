@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+body{
+    height: 100vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    filter: drop-shadow(0 0 10px white);
+}
+
+
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.play-button {
+    background-color: green;
+    font-size: 40px;
+    font-family: Impact;
+    border: 2px solid black;
+    margin-top: 50px;
+    height: 90px;
+    width: 250px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .logo{
+      height: 300px;
+      width: 500px;
+  }
+
+  .elements{
+      display: grid;
+      align-items: center;
+     
+  }
+
+  @function random_range($min, $max) {
+    $rand: random();
+    $random_range: $min + floor($rand * (($max - $min) + 1));
+    @return $random_range;
+  }
+
+
+    
+  
