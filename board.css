@@ -20,35 +20,35 @@ table 	{
 .greensquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: green;
+	background-color: #99B051;
 	color: exit;
 		}
 
 .bluesquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: blue;
+	background-color:#479298;
 	color: exit;
 		}
 
 .purplesquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: purple;
+	background-color: #922823;
 	color: exit;
 		}
 
 .yellowsquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: yellow;
+	background-color: #DABC5C;
 	color: exit;
 		}
 
 .orangesquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: orange;
+	background-color: #D2873A;
 	color: exit;
 		}
 
@@ -104,3 +104,16 @@ background-image:url(prairie7.jpg);*/
 	border: 2px solid gray;
 	align-items: center;
 }
+
+
+
+/* Colors: 
+
+gold : #DABC5C
+khaki green: #8A884F
+light green: #99B051
+orange: #D2873A
+brown: #785039
+blue: #479298
+red: #922823
+*/ 
