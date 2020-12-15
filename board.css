@@ -71,6 +71,7 @@ h3 {
 body {
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
 }
 #dice {
   text-align: center;
@@ -79,16 +80,38 @@ body {
   cursor: pointer;
 }
 
-#rolldice {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.start,
+.end {
+  border: 2px solid black;
 }
 
-.dot {
+.addRedBall {
   height: 25px;
   width: 25px;
   background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.addBrownBall {
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.addVioletBall {
+  height: 25px;
+  width: 25px;
+  background-color: violet;
+  border-radius: 50%;
+  display: inline-block;
+}
+.addBlackBall {
+  height: 25px;
+  width: 25px;
+  background-color: black;
   border-radius: 50%;
   display: inline-block;
 }
