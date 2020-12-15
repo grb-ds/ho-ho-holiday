@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="board.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
     <style type="text/css"></style>
     <title>Document</title>
 </head>
@@ -52,7 +53,7 @@
         <td class="td0">   </td> 
     <div id="case9">  	<td class= "yellowsquare" id="9" > 9       </td></div>
       </tr> 
-      <TR> 
+      <TR>
     <div id="case17">  	<td class= "bluesquare" id="17" > 17 </td> </div>
         <td class="td0">   </td> 
         <td class="td0">   </td> 
@@ -60,8 +61,8 @@
         <td class="td0">   </td> 
     <div id="case10">  	<td class= "orangesquare" id="10" > 10 </td> </div>
     
-      </TR> 
-       <TR> 
+      </TR>
+       <TR>
     <div id="case16">  	<td class= "greensquare" id="16" > 16 </td> </div>
     <div id="case15">  	<td class= "orangesquare" id="15" > 15 </td> </div>
         <div id="case14">  <td class= "yellowsquare" id="14" > 14 </td> </div>
@@ -73,7 +74,22 @@
     </table>
   <button id=dice> Throw dices</button>
   <div id="rolldice"></div>
-    
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="form">
+            <form id="inputs" class="" novalidate="">
+                <div class="">
+                    <label for="formValue">Enter the </label>
+                    <input type="text" class="" id="formValue" required="">
+                    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+        </div>
+        <img class="modal-content" id="imgModal">
+    </div>
     
     </body>
 
@@ -83,7 +99,8 @@
 
 
 
-<script src="script.js" ></script>
+<!--<script src="script.js" ></script>-->
+<script src="./apis/CallApis.js" ></script>
 
 </body>
 
