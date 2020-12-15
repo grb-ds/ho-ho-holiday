@@ -1,4 +1,5 @@
 let score = 0;
+let highscore = localStorage.getItem("highscore");
 
 const scoreboard = (element) => {
 
@@ -24,3 +25,12 @@ const scoreboard = (element) => {
 
     // Add document.get element innerhtml to add score to mainpage 
 };
+
+
+
+const showHighscore = () => {
+
+    if (score > highscore) {
+        localStorage.setItem("highscore", score);
+    } 
+}
