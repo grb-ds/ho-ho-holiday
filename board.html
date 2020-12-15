@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="board.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
     <style type="text/css"></style>
     <script defer src="script.js" ></script>
+    <script defer src="./apis/CallApis.js" ></script>
+    <script defer src="./dice.js"></script>
+    
+
+
     <title>Document</title>
 </head>
 <body>
@@ -62,7 +68,7 @@
         <td class="td0">   </td> 
     <div id="case10">  	<td class= "orangesquare" id="10" > 10  <img class="icons" src="./images/elf.png" alt=""> </td> </div>
     
-      </TR> 
+      </TR>
        <TR> 
     <div id="case16">  	<td class= "greensquare" id="16" > 16  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
     <div id="case15">  	<td class= "orangesquare" id="15" > 15   <img class="icons" src="./images/elf.png" alt=""> </td> </div>
@@ -73,6 +79,25 @@
       
       
     </table>  
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="modal-close">&times;</span>
+          <div class="form">
+              <form id="inputs" class="" novalidate="">
+                  <div class="">
+                      <label for="formValue">Enter the </label>
+                      <input type="text" class="" id="formValue" required="">
+                      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+              </form>
+  
+          </div>
+          <img class="modal-content" id="imgModal">
+      </div>
+      
+  
     <div id="info">
       <div id='player-turn'></div>
       <div id="party-people"></div>
@@ -125,7 +150,7 @@
       </ol>
       
     </div>
-    <script src="./dice.js"></script>
+    
   
 
       </div>
@@ -133,15 +158,5 @@
     </div>
 
     </body>
-
-
-</html>
-
-
-
-
-
-</body>
-
 
 </html>
