@@ -23,37 +23,32 @@ td {
 
 .greensquare {
   width: 300px;
-  height: 85px;
+  height: 150px;
   background-color: #8a884f;
-  color: exit;
 }
 
 .bluesquare {
   width: 300px;
-  height: 85px;
+  height: 150px;
   background-color: #479298;
-  color: exit;
 }
 
 .purplesquare {
   width: 300px;
-  height: 85px;
+  height: 150px;
   background-color: #922823;
-  color: exit;
 }
 
 .yellowsquare {
   width: 300px;
-  height: 85px;
+  height: 150px;
   background-color: #dabc5c;
-  color: exit;
 }
 
 .orangesquare {
   width: 300px;
-  height: 85px;
+  height: 150px;
   background-color: #d2873a;
-  color: exit;
 }
 
 .end {
@@ -66,7 +61,7 @@ td {
   background-image: url("./images/photo-1536972781967-a8aedfb21059.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 h1 {
@@ -117,7 +112,7 @@ red: #922823
 */
 
 .icons {
-  width: 55px;
+  width: 75px;
   z-index: 1;
 }
 
