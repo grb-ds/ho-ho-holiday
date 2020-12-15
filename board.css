@@ -76,13 +76,19 @@ td {
 	background-position: bottom;
 }
 
-		
+.yellowsquare {
+  width: 300px;
+  height: 85px;
+  background-color: yellow;
+  color: exit;
+}
 
-h1		{
-	
-	color: black;
-	text-align: center;
-		}	
+.orangesquare {
+  width: 300px;
+  height: 85px;
+  background-color: orange;
+  color: exit;
+}
 
 h2              {
     color: red;
@@ -100,16 +106,25 @@ background:url("./images/lotr-background.jpg") no-repeat center center fixed;
 	margin:0;
 	padding:0;
 
-	-moz-background-size: cover; /*mozilla */
+.start,
+.end {
+  border: 2px solid black;
+}
 
- background-size: cover;  /*standard*/
+.addRedBall {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-		}
-#dice {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	cursor: pointer;
+.addBrownBall {
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 #rolldice{

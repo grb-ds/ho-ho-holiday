@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="board.css">
-    <style type="text/css"></style>
-    <title>Document</title>
+    <script defer src="script.js" ></script>
+    <title>Board game</title>
 </head>
 <body>
-
-    <table border="1">
+    <table>
       <tr>
     <div id="case-0" class ="start" >  	<td class= "start" id="0" >   </td> </div>
     <div id="case1">  	<td class= "greensquare" id="1" > 1  <img class="number" src="./images/one.png" alt="">
@@ -21,7 +20,7 @@
         <div id="case5"> <td class= "orangesquare" id="5" > 5   <img class="icons" src="./images/elf.png" alt=""> </td> </div>
     
       </tr>
-        <tr>
+      <tr>
         <td class="td0">   </td>
         <td class="td0">   </td>
         <td class="td0">   </td>
@@ -73,21 +72,18 @@
       
       
     </table>
-  <button id=dice> Throw dices</button>
-  <div id="rolldice"></div>
-    
-    
-    </body>
-
-
-</html>
-
-
-
-
-<script src="script.js" ></script>
-
-</body>
-
-
+    <div id="info">
+      <div id='player-turn'></div>
+      <div id="party-people"></div>
+      <div id="player-one"></div>
+      <div id="player-two"></div>
+      <div id="player-three"></div>
+      <div id="player-four"></div>
+    </div>
+  <div id="rolldice">
+    <button id=start>Start</button>
+    <button id=dice>Throw dice</button>
+    <button id=reset>Rest the game</button>
+  </div>
+  </body>
 </html>
