@@ -1,10 +1,15 @@
+
+
+
 table 	{ 
+	color: white;
 	text-align: center;
 	height: 500px;
 	width: 1000px;
 	border: 0px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	
 		}
 
 .td0	{ 
@@ -17,45 +22,59 @@ table 	{
 }
 
 	
+td {
+	border-radius: 15px;
+	border: transparent;
+
+	}
+
 .greensquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: green;
+	background-color: #8A884F;
 	color: exit;
 		}
 
 .bluesquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: blue;
+	background-color:#479298;
 	color: exit;
 		}
 
 .purplesquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: purple;
+	background-color: #922823;
 	color: exit;
 		}
 
 .yellowsquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: yellow;
+	background-color: #DABC5C;
 	color: exit;
 		}
 
 .orangesquare	{ 
 	width: 300px;
 	height: 85px;
-	background-color: orange;
+	background-color: #D2873A;
 	color: exit;
 		}
 
 .end{
 	color: red;
+	background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
+	background-size: cover;
 }
 
+.start {
+	background-image: url("./images/photo-1536972781967-a8aedfb21059.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
 
 		
 
@@ -75,16 +94,11 @@ h3 		{
 	font-size: 130%;
 		}
 body 	{
-/* 1er essai
-background-attachment:fixed;
-background-repeat:no-repeat;
-background-color:white;
-background-image:url(prairie7.jpg);*/
 
+background:url("./images/lotr-background.jpg") no-repeat center center fixed;
 
 	margin:0;
 	padding:0;
-	background: url(prairie7.jpg) no-repeat center fixed;
 
 	-moz-background-size: cover; /*mozilla */
 
@@ -103,4 +117,36 @@ background-image:url(prairie7.jpg);*/
 	height: 120px;
 	border: 2px solid gray;
 	align-items: center;
+}
+
+
+
+/* Colors: 
+
+gold : #DABC5C
+khaki green: #8A884F
+light green: #99B051
+orange: #D2873A
+brown: #785039
+blue: #479298
+red: #922823
+*/ 
+
+
+.icons {
+
+	width: 55px;
+	z-index: 1;
+}
+
+/* .startIcon {
+
+	width: 90px;
+} */
+
+
+.number {
+	z-index: 2;
+position: relative;	
+width: 20px;
 }
