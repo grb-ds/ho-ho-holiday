@@ -49,7 +49,7 @@ document.querySelector("#dice").addEventListener("click", () => {
 	// }
 
 
-	// layer one
+	// player one
 	if (indexGame == 0){
 		let child = document.querySelector(".addRedBall");
 		document.getElementById(`${scorePlayerOne}`).removeChild(child);
@@ -61,6 +61,10 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerOne}`).appendChild(addRedBall);
 		document.querySelector("#player-one").innerHTML = `Player one just threw ${diceRoll} and is on tile ${scorePlayerOne}.`
 		indexGame ++;
+		if (indexGame == partyPeopleGame){
+			indexGame = 0;
+			return;
+		}
 	}
 
 	// player Two
@@ -75,6 +79,10 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerTwo}`).appendChild(addBrownBall);
 		document.querySelector("#player-two").innerHTML = `Player two just threw ${diceRoll} and is on tile ${scorePlayerTwo}.`
 		indexGame ++;
+		if (indexGame == partyPeopleGame){
+			indexGame = 0;
+			return;
+		}
 	}
 
 	// player Three
@@ -89,6 +97,10 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerThree}`).appendChild(addVioletBall);
 		document.querySelector("#player-three").innerHTML = `Player three just threw ${diceRoll} and is on tile ${scorePlayerThree}.`
 		indexGame ++;
+		if (indexGame == partyPeopleGame){
+			indexGame = 0;
+			return;
+		}
 	}
 
 	// player Four
@@ -103,12 +115,16 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerFour}`).appendChild(addBlackBall);
 		document.querySelector("#player-four").innerHTML = `Player four just threw ${diceRoll} and is on tile ${scorePlayerFour}.`
 		indexGame ++;
+		if (indexGame == partyPeopleGame){
+			indexGame = 0;
+			return;
+		}
 	}
 
-	else if (indexGame == partyPeopleGame){
-		indexGame = 0;
-		return;
-	}
+	// else if (indexGame == partyPeopleGame){
+	// 	indexGame = 0;
+	// 	return;
+	// }
 
 })
 
