@@ -1,24 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url("https://allfont.net/allfont.css?fonts=elvish-ring-nfi");
+
 body{
-    height: 100vh;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: 'Elvish Ring NFI', arial;
+    color: gold;
+   background-image: url(img/lotr-background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
-    filter: drop-shadow(0 0 10px white);
+
 }
 
 
 h1{
     text-align: center;
+    margin-top: 150px;
+    font-size: 80px;
+    text-shadow:1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
 }
 h3{
     text-align: center;
+    font-size: 40px;
+    color: #D2873A;
 }
 
 .play-button {
-    background-color: green;
+    background-color: #99B051;
     font-size: 40px;
     font-family: Impact;
     border: 2px solid black;
@@ -38,17 +70,7 @@ h3{
       width: 500px;
   }
 
-  .elements{
-      display: grid;
-      align-items: center;
-     
-  }
-
-  @function random_range($min, $max) {
-    $rand: random();
-    $random_range: $min + floor($rand * (($max - $min) + 1));
-    @return $random_range;
-  }
+  
 
 
     
