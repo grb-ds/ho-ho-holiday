@@ -47,8 +47,6 @@ document.querySelector("#dice").addEventListener("click", () => {
 	// else {
 	// 	alert("error");
 	// }
-	if
-
 	// player one
 	if (indexGame == 0){
 		let child = document.querySelector(".addRedBall");

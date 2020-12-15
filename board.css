@@ -1,125 +1,109 @@
-
-
-
-table 	{ 
-	color: white;
-	text-align: center;
-	height: 500px;
-	width: 1000px;
-	border: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	
-		}
-
-.td0	{ 
-	border: 0px;
-	
-		}
-
-.start{
-	color: red;
+table {
+  color: white;
+  text-align: center;
+  height: 500px;
+  width: 1000px;
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-	
-td {
-	border-radius: 15px;
-	border: transparent;
-
-	}
-
-.greensquare	{ 
-	width: 300px;
-	height: 85px;
-	background-color: #8A884F;
-	color: exit;
-		}
-
-.bluesquare	{ 
-	width: 300px;
-	height: 85px;
-	background-color:#479298;
-	color: exit;
-		}
-
-.purplesquare	{ 
-	width: 300px;
-	height: 85px;
-	background-color: #922823;
-	color: exit;
-		}
-
-.yellowsquare	{ 
-	width: 300px;
-	height: 85px;
-	background-color: #DABC5C;
-	color: exit;
-		}
-
-.orangesquare	{ 
-	width: 300px;
-	height: 85px;
-	background-color: #D2873A;
-	color: exit;
-		}
-
-.end{
-	color: red;
-	background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
-	background-size: cover;
+.td0 {
+  border: 0px;
 }
 
 .start {
-	background-image: url("./images/photo-1536972781967-a8aedfb21059.jpeg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
+  color: red;
 }
 
-		
+td {
+  border-radius: 15px;
+  border: transparent;
+}
 
-h1		{
-	
-	color: black;
-	text-align: center;
-		}	
+.greensquare {
+  width: 300px;
+  height: 85px;
+  background-color: #8a884f;
+  color: exit;
+}
 
-h2              {
-    color: red;
-	text-decoration: underline;
-	font-weight: bold;
-	font-size: 175%;
-		}
-h3 		{
-	font-size: 130%;
-		}
-body 	{
+.bluesquare {
+  width: 300px;
+  height: 85px;
+  background-color: #479298;
+  color: exit;
+}
 
-background:url("./images/lotr-background.jpg") no-repeat center center fixed;
+.purplesquare {
+  width: 300px;
+  height: 85px;
+  background-color: #922823;
+  color: exit;
+}
 
-	margin:0;
-	padding:0;
+.yellowsquare {
+  width: 300px;
+  height: 85px;
+  background-color: #dabc5c;
+  color: exit;
+}
 
-	-moz-background-size: cover; /*mozilla */
+.orangesquare {
+  width: 300px;
+  height: 85px;
+  background-color: #d2873a;
+  color: exit;
+}
 
- background-size: cover;  /*standard*/
+.end {
+  color: red;
+  background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+}
 
-		}
+.start {
+  background-image: url("./images/photo-1536972781967-a8aedfb21059.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 175%;
+}
+h3 {
+  font-size: 130%;
+}
+body {
+  background: url("./images/lotr-background.jpg") no-repeat center center fixed;
+  margin: 0;
+  padding: 0;
+  -moz-background-size: cover; /*mozilla */
+  background-size: cover; /*standard*/
+}
+
 #dice {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	cursor: pointer;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
-#rolldice{
-	width: 120px;
-	height: 120px;
-	border: 2px solid gray;
-	align-items: center;
+#rolldice {
+  width: 120px;
+  height: 120px;
+  border: 2px solid gray;
+  align-items: center;
 }
-
-
 
 /* Colors: 
 
@@ -130,13 +114,11 @@ orange: #D2873A
 brown: #785039
 blue: #479298
 red: #922823
-*/ 
-
+*/
 
 .icons {
-
-	width: 55px;
-	z-index: 1;
+  width: 55px;
+  z-index: 1;
 }
 
 /* .startIcon {
@@ -144,9 +126,38 @@ red: #922823
 	width: 90px;
 } */
 
-
 .number {
-	z-index: 2;
-position: relative;	
-width: 20px;
+  z-index: 2;
+  position: relative;
+  width: 20px;
+}
+.addRedBall {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.addBrownBall {
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.addVioletBall {
+  height: 25px;
+  width: 25px;
+  background-color: violet;
+  border-radius: 50%;
+  display: inline-block;
+}
+.addBlackBall {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
 }
