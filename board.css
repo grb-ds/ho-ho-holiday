@@ -127,7 +127,11 @@ red: #922823
   width: 20px;
 }
 
-
+.numberTwo {
+  z-index: 2;
+  position: relative;
+  width: 40px;
+}
 
 
 
