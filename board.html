@@ -1,162 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="board.css">
-    <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
-    <style type="text/css"></style>
-    <script defer src="script.js" ></script>
-    <script defer src="./apis/CallApis.js" ></script>
-    <script defer src="./dice.js"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="board.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
+  <style type="text/css"></style>
+  <script defer src="script.js"></script>
+  <script defer src="./apis/CallApis.js"></script>
+  <script defer src="./dice.js"></script>
 
 
-    <title>Document</title>
+
+  <title>Document</title>
 </head>
+
 <body>
 
-    <table border="1">
-      <tr>
-        <div id="case-0" class ="start" >  	<td class= "start" id="0" >   </td> </div>
-        <div id="case1">  	<td class= "greensquare" id="1" > 1  <img class="number" src="./images/one.png" alt="">
-        <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-        <div id="case2">  	<td class= "bluesquare" id="2" > 2 <img class="icons" src="./images/quiver.png" alt=""> </td> </div>
-        <div id="case3"> <td class= "purplesquare" id="3" >3 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt=""> </td> </div>
-        <div id="case4">  	<td class= "yellowsquare" id="4" > 4  <img class="icons" src="./images/sword.png" alt="">
-        </td> </div>
-        <div id="case5"> <td class= "orangesquare" id="5" > 5   <img class="icons" src="./images/elf.png" alt=""> </td> </div>
+  <table border="1">
+    <tr>
+      <div id="case-0" class="start">
+        <td class="start" id="0"> </td>
+      </div>
+      <div id="case1">
+        <td class="greensquare" id="1"> 1 <img class="number" src="./images/one.png" alt="">
+          <img class="icons" src="./images/mountain.png" alt=""> </td>
+      </div>
+      <div id="case2">
+        <td class="bluesquare" id="2"> 2 <img class="icons" src="./images/quiver.png" alt=""> </td>
+      </div>
+      <div id="case3">
+        <td class="purplesquare" id="3">3 <img class="icons"
+            src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+            alt=""> </td>
+      </div>
+      <div id="case4">
+        <td class="yellowsquare" id="4"> 4 <img class="icons" src="./images/sword.png" alt="">
+        </td>
+      </div>
+      <div id="case5">
+        <td class="orangesquare" id="5"> 5 <img class="icons" src="./images/elf.png" alt=""> </td>
+      </div>
+    </tr>
+    <tr>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <div id="case-1" class="case">
+        <td class="greensquare" id="6"> 6 <img class="icons" src="./images/mountain.png" alt=""> </td>
+      </div>
+    </tr>
+    <tr>
+      <div id="case20">
+        <td class="orangesquare" id="20"> 20 <img class="icons" src="./images/elf.png" alt=""> </td>
+      </div>
+      <div id="case21">
+        <td class="greensquare" id="21"> 21 <img class="icons" src="./images/mountain.png" alt=""> </td>
+      </div>
+      <div id="cas22">
+        <td class="bluesquare" id="22"> 22 <img class="icons" src="./images/quiver.png" alt=""> </td>
+      </div>
+      <div id="case23">
+        <td class="purplesquare" id="23"> 23 <img class="icons"
+            src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+            alt=""> </td>
+      </div>
+      <td class="td0"> </td>
+      <div id="case7">
+        <td class="bluesquare" id="7"> 7 <img class="icons" src="./images/quiver.png" alt=""> </td>
+      </div>
+    </tr>
+    <tr>
+      <div id="case19">
+        <td class="yellowsquare" id="19"> 19 <img class="icons" src="./images/sword.png" alt=""> </td>
+      </div>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <div id="case24">
+        <td class="yellowsquare" id="24"> 24 <img class="icons" src="./images/sword.png" alt=""> </td>
+      </div>
+      <td class="td0"> </td>
+      <div id="case8">
+        <td class="purplesquare" id="8"> 8 <img class="icons"
+            src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+            alt=""> </td>
+      </div>
+
+    </tr>
+    <tr>
+      <div id="case18">
+        <td class="purplesquare" id="18"> 18 <img class="icons"
+            src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+            alt=""> </td>
+      </div>
+      <td class="td0"> </td>
+      <td class="end" id="26"></td>
+      <div id="case25">
+        <td class="orangesquare" id="25"> 25 <img class="icons" src="./images/elf.png" alt=""> </td>
+      </div>
+      <td class="td0"> </td>
+      <div id="case9">
+        <td class="yellowsquare" id="9"> 9 <img class="icons" src="./images/sword.png" alt=""> </td>
+      </div>
+    </tr>
+    <tr>
+      <div id="case17">
+        <td class="bluesquare" id="17"> 17 <img class="icons" src="./images/quiver.png" alt=""> </td>
+      </div>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <td class="td0"> </td>
+      <div id="case10">
+        <td class="orangesquare" id="10"> 10 <img class="icons" src="./images/elf.png" alt=""> </td>
+      </div>
+
+    </tr>
+    <tr>
+      <div id="case16">
+        <td class="greensquare" id="16"> 16 <img class="icons" src="./images/mountain.png" alt=""> </td>
+      </div>
+      <div id="case15">
+        <td class="orangesquare" id="15"> 15 <img class="icons" src="./images/elf.png" alt=""> </td>
+      </div>
+      <div id="case14">
+        <td class="yellowsquare" id="14"> 14 <img class="icons" src="./images/sword.png" alt=""> </td>
+      </div>
+      <div id="case13">
+        <td class="purplesquare" id="13"> 13 <img class="icons"
+            src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+            alt=""> </td>
+      </div>
+      <div id="case12">
+        <td class="bluesquare" id="12"> 12 <img class="icons" src="./images/quiver.png" alt=""> </td>
+      </div>
+      <div id="case11">
+        <td class="greensquare" id="11"> 11 <img class="icons" src="./images/mountain.png" alt=""> </td>
+      </div>
       </tr>
-      <tr>
-        <td class="td0">   </td>
-        <td class="td0">   </td>
-        <td class="td0">   </td>
-        <td class="td0">   </td>
-        <td class="td0">   </td>
-         <div id="case-1" class ="case" > 	<td class= "greensquare" id="6" > 6  <img class="icons" src="./images/mountain.png" alt=""> </td>   </div>
-     </tr>
-      <tr> 
-        <div id="case20">  	<td class= "orangesquare" id="20" > 20  <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-        <div id="case21"> 	<td class= "greensquare" id="21" > 21  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-        <div id="cas22"> 	<td class= "bluesquare" id="22" > 22  <img class="icons" src="./images/quiver.png" alt=""> </td> </div>
-        <div id="case23">  	<td class= "purplesquare" id="23" > 23 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt=""> </td></div>
-        <td class="td0">   </td>
-        <div id="case7">	<td class= "bluesquare" id="7" > 7 <img class="icons" src="./images/quiver.png" alt="">  </td> </div>
-     </tr>
-        <tr> 
-    <div id="case19">  	<td class= "yellowsquare" id="19" > 19  <img class="icons" src="./images/sword.png" alt=""> </td> </div>
-         <td class="td0">   </td> 
-        <td class="td0">   </td> 
-    <div id="case24">  	<td class= "yellowsquare" id="24" > 24 <img class="icons" src="./images/sword.png" alt="">  </td> </div>
-        <td class="td0">   </td> 
-    <div id="case8">	<td class= "purplesquare" id="8" >  8 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt="">  </td> </div>
-     
-      </tr> 
-      <tr> 
-    <div id="case18"> 	<td class= "purplesquare" id="18" > 18    <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt="">  </td> </div>
-        <td class="td0">    </td> 
-         <td class= "end" id="26" ></td>
-    <div id="case25">  	<td class= "orangesquare" id="25" > 25    <img class="icons" src="./images/elf.png" alt="">   </td></div>
-        <td class="td0">   </td> 
-    <div id="case9">  	<td class= "yellowsquare" id="9" > 9     <img class="icons" src="./images/sword.png" alt="">   </td></div>
-      </tr> 
-      <TR> 
-    <div id="case17">  	<td class= "bluesquare" id="17" > 17 <img class="icons" src="./images/quiver.png" alt=""> </td> </div>
-        <td class="td0">   </td> 
-        <td class="td0">   </td> 
-        <td class="td0">   </td> 
-        <td class="td0">   </td> 
-    <div id="case10">  	<td class= "orangesquare" id="10" > 10  <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-    
-      </TR>
-       <TR> 
-    <div id="case16">  	<td class= "greensquare" id="16" > 16  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-    <div id="case15">  	<td class= "orangesquare" id="15" > 15   <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-        <div id="case14">  <td class= "yellowsquare" id="14" > 14  <img class="icons" src="./images/sword.png" alt=""> </td> </div>
-    <div id="case13">  	<td class= "purplesquare" id="13" > 13 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt=""> </td></div>
-    <div id="case12">  	<td class= "bluesquare" id="12" > 12 <img class="icons" src="./images/quiver.png" alt=""> </td></div>
-    <div id="case11"> 	<td class= "greensquare" id="11" > 11  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-      
-      
-    </table>  
+  </table>
 
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <span class="modal-close">&times;</span>
-          <div class="form">
-              <form id="inputs" class="" novalidate="">
-                  <div class="">
-                      <label for="formValue">Enter the </label>
-                      <input type="text" class="" id="formValue" required="">
-                      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-                  </div>
-              </form>
-  
-          </div>
-          <img class="modal-content" id="imgModal">
-      </div>
-      
-  
-    <div id="info">
-      <div id='player-turn'></div>
-      <div id="party-people"></div>
-      <div id="player-one"></div>
-      <div id="player-two"></div>
-      <div id="player-three"></div>
-      <div id="player-four"></div>
+  <!-- The Modal  -->
+  <div id="myModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <div class="form">
+      <form id="inputs" class="" novalidate="">
+        <div class="">
+          <label for="formValue">Enter the </label>
+          <input type="text" class="" id="formValue" required="">
+          <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
     </div>
-    
-      <button id=start>Start</button>
-     <br>
-       <button id=dice>Throw dice</button>
-       
+    <img class="modal-content" id="imgModal">
+  </div>
 
-    <div class="dice">
-      <ol class="die-list even-roll" data-roll="1" id="die-1">
-        <li class="die-item" data-side="1">
-          <span class="dot"></span>
-        </li>
-        <li class="die-item" data-side="2">
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </li>
-        <li class="die-item" data-side="3">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </li>
-        <li class="die-item" data-side="4">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </li>
-        <li class="die-item" data-side="5">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </li>
-        <li class="die-item" data-side="6">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </li>
-      </ol>
-      
-    </div>
-    
-  
 
-      </div>
-      <button id=reset>Rest the game</button>
-    </div>
+  <div id="info">
+    <div id="player-turn"></div>
+    <div id="party-people"></div>
+    <div id="player-one"></div>
+    <div id="player-two"></div>
+    <div id="player-three"></div>
+    <div id="player-four"></div>
+  </div>
 
-    </body>
+  <button id="start">Start</button>
+  <br>
+  <button id="dice">Throw dice</button>
+
+
+  <div class="dice">
+    <ol class="die-list even-roll" data-roll="1" id="die-1">
+      <li class="die-item" data-side="1">
+        <span class="dot"></span>
+      </li>
+      <li class="die-item" data-side="2">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </li>
+      <li class="die-item" data-side="3">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </li>
+      <li class="die-item" data-side="4">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </li>
+      <li class="die-item" data-side="5">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </li>
+      <li class="die-item" data-side="6">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </li>
+    </ol>
+
+  </div>
+
+
+
+  <div>
+  <button id="reset">Rest the game</button>
+  </div>
+
+</body>
 
 </html>

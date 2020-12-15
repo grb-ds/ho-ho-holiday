@@ -121,16 +121,16 @@ red: #922823
   z-index: 1;
 }
 
-/* .startIcon {
-
-	width: 90px;
-} */
-
 .number {
   z-index: 2;
   position: relative;
   width: 20px;
 }
+
+
+
+
+
 .addRedBall {
   height: 25px;
   width: 25px;
