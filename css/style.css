@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url("https://allfont.net/allfont.css?fonts=elvish-ring-nfi");
+
+body {
+  text-align: center;
+  font-family: "Elvish Ring NFI", arial;
+  color: gold;
+  background-image: url(img/lotr-background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 80px;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #d2873a;
+}
+
+.play-button {
+  background-color: #99b051;
+  font-size: 40px;
+  font-family: Impact;
+  border: 2px solid black;
+  margin-top: 50px;
+  height: 90px;
+  width: 250px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.logo {
+  height: 300px;
+  width: 500px;
+}

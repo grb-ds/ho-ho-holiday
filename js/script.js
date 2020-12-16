@@ -50,13 +50,14 @@ document.querySelector("#dice").addEventListener("click", () => {
 	// player one
 	if (indexGame == 0){
 		let child = document.querySelector(".addRedBall");
-		document.getElementById(`${scorePlayerOne}`).removeChild(child);
 
+		document.getElementById(`${scorePlayerOne}`).removeChild(child);
 		let addRedBall = document.createElement("p");
-		addRedBall.setAttribute("class", "addRedBall");
-		
+
 		scorePlayerOne += diceRoll;
+		addRedBall.setAttribute("class", "addRedBall");
 		document.getElementById(`${scorePlayerOne}`).appendChild(addRedBall);
+
 		document.querySelector("#player-one").innerHTML = `Player one just threw ${diceRoll} and is on tile ${scorePlayerOne}.`
 		indexGame ++;
 		if (indexGame == partyPeopleGame){
@@ -119,35 +120,11 @@ document.querySelector("#dice").addEventListener("click", () => {
 		}
 	}
 
-	// else if (indexGame == partyPeopleGame){
-	// 	indexGame = 0;
-	// 	return;
-	// }
-
 })
 
-
+// reset the game
 document.querySelector("#reset").addEventListener("click", () =>{
 	location.reload();
 })
 
-function rollDice() {
-    const dice = [...document.querySelectorAll(".die-list")];
-    dice.forEach(die => {
-      toggleClasses(die);
-      die.dataset.roll = getRandomNumber(1, 6);
-    });
-  }
   
-  function toggleClasses(die) {
-    die.classList.toggle("odd-roll");
-    die.classList.toggle("even-roll");
-  }
-  
-  function getRandomNumber(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  
-  document.getElementById("dice").addEventListener("click", rollDice);
