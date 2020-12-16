@@ -10,13 +10,28 @@
   <script defer src="script.js"></script>
   <script defer src="./apis/CallApis.js"></script>
   <script defer src="./dice.js"></script>
-
-
-
   <title>Document</title>
 </head>
 
 <body>
+  <div class="top-container">
+    <div class="rules"> 
+      <a href="index.html">Go back to the rules</a>
+    </div>
+    <div class="title">
+      <h1> Race To Mordor</h1>
+    </div>
+    <div class="scoreboard">
+      <ul class="scoreText">
+        <li class="titleScoreboard">SCOREBOARD </li>
+        <li>Player One:</li>
+        <li>Player Two:</li>
+        <li>Player Three:</li>
+        <li>Player Four: </li>
+        <li>Highscore: </li>
+      </ul>
+    </div>
+  </div>
 
   <table border="1">
     <tr>
@@ -28,7 +43,8 @@
           <img class="icons" src="./images/mountain.png" alt=""> </td>
       </div>
       <div id="case2">
-        <td class="bluesquare" id="2"> <img class="number" src="./images/two.png" alt=""> <img class="icons" src="./images/quiver.png" alt=""> </td>
+        <td class="bluesquare" id="2"> <img class="number" src="./images/two.png" alt=""> <img class="icons"
+            src="./images/quiver.png" alt=""> </td>
       </div>
       <div id="case3">
         <td class="purplesquare" id="3"><img class="number" src="./images/three.png" alt=""> <img class="icons"
@@ -36,11 +52,13 @@
             alt=""> </td>
       </div>
       <div id="case4">
-        <td class="yellowsquare" id="4"> <img class="number" src="./images/four.png" alt=""> <img class="icons" src="./images/sword.png" alt="">
+        <td class="yellowsquare" id="4"> <img class="number" src="./images/four.png" alt=""> <img class="icons"
+            src="./images/sword.png" alt="">
         </td>
       </div>
       <div id="case5">
-        <td class="orangesquare" id="5"> <img class="number" src="./images/five.png" alt="">  <img class="icons" src="./images/elf.png" alt=""> </td>
+        <td class="orangesquare" id="5"> <img class="number" src="./images/five.png" alt=""> <img class="icons"
+            src="./images/elf.png" alt=""> </td>
       </div>
     </tr>
     <tr>
@@ -50,37 +68,45 @@
       <td class="td0"> </td>
       <td class="td0"> </td>
       <div id="case-1" class="case">
-        <td class="greensquare" id="6"> <img class="number" src="./images/six.png" alt=""> <img class="icons" src="./images/mountain.png" alt=""> </td>
+        <td class="greensquare" id="6"> <img class="number" src="./images/six.png" alt=""> <img class="icons"
+            src="./images/mountain.png" alt=""> </td>
       </div>
     </tr>
     <tr>
       <div id="case20">
-        <td class="orangesquare" id="20"> <img class="numberTwo" src="./images/twenty.png" alt=""> <img class="icons" src="./images/elf.png" alt=""> </td>
+        <td class="orangesquare" id="20"> <img class="numberTwo" src="./images/twenty.png" alt=""> <img class="icons"
+            src="./images/elf.png" alt=""> </td>
       </div>
       <div id="case21">
-        <td class="greensquare" id="21"> <img class="numberTwo" src="./images/twentyone.png" alt=""> <img class="icons" src="./images/mountain.png" alt=""> </td>
+        <td class="greensquare" id="21"> <img class="numberTwo" src="./images/twentyone.png" alt=""> <img class="icons"
+            src="./images/mountain.png" alt=""> </td>
       </div>
       <div id="cas22">
-        <td class="bluesquare" id="22"> <img class="numberTwo" src="./images/twentytwo.png" alt=""> <img class="icons" src="./images/quiver.png" alt=""> </td>
+        <td class="bluesquare" id="22"> <img class="numberTwo" src="./images/twentytwo.png" alt=""> <img class="icons"
+            src="./images/quiver.png" alt=""> </td>
       </div>
       <div id="case23">
-        <td class="purplesquare" id="23"> <img class="numberTwo" src="./images/twentythree.png" alt=""> <img class="icons"
+        <td class="purplesquare" id="23"> <img class="numberTwo" src="./images/twentythree.png" alt=""> <img
+            class="icons"
             src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
             alt=""> </td>
       </div>
       <td class="td0"> </td>
       <div id="case7">
-        <td class="bluesquare" id="7"> <img class="number" src="./images/seven.png" alt=""> <img class="icons" src="./images/quiver.png" alt=""> </td>
+        <td class="bluesquare" id="7"> <img class="number" src="./images/seven.png" alt=""> <img class="icons"
+            src="./images/quiver.png" alt=""> </td>
       </div>
     </tr>
     <tr>
       <div id="case19">
-        <td class="yellowsquare" id="19"> <img class="numberTwo" src="./images/nineteen.png" alt=""> <img class="icons" src="./images/sword.png" alt=""> </td>
+        <td class="yellowsquare" id="19"> <img class="numberTwo" src="./images/nineteen.png" alt=""> <img class="icons"
+            src="./images/sword.png" alt=""> </td>
       </div>
       <td class="td0"> </td>
       <td class="td0"> </td>
       <div id="case24">
-        <td class="yellowsquare" id="24"> <img class="numberTwo" src="./images/twentyfour.png" alt=""> <img class="icons" src="./images/sword.png" alt=""> </td>
+        <td class="yellowsquare" id="24"> <img class="numberTwo" src="./images/twentyfour.png" alt=""> <img
+            class="icons" src="./images/sword.png" alt=""> </td>
       </div>
       <td class="td0"> </td>
       <div id="case8">
@@ -99,35 +125,42 @@
       <td class="td0"> </td>
       <td class="end" id="26"></td>
       <div id="case25">
-        <td class="orangesquare" id="25"> <img class="numberTwo" src="./images/twentyfive.png" alt=""> <img class="icons" src="./images/elf.png" alt=""> </td>
+        <td class="orangesquare" id="25"> <img class="numberTwo" src="./images/twentyfive.png" alt=""> <img
+            class="icons" src="./images/elf.png" alt=""> </td>
       </div>
       <td class="td0"> </td>
       <div id="case9">
-        <td class="yellowsquare" id="9"> <img class="number" src="./images/nine.png" alt=""> <img class="icons" src="./images/sword.png" alt=""> </td>
+        <td class="yellowsquare" id="9"> <img class="number" src="./images/nine.png" alt=""> <img class="icons"
+            src="./images/sword.png" alt=""> </td>
       </div>
     </tr>
     <tr>
       <div id="case17">
-        <td class="bluesquare" id="17"> <img class="numberTwo" src="./images/seventeen.png" alt=""> <img class="icons" src="./images/quiver.png" alt=""> </td>
+        <td class="bluesquare" id="17"> <img class="numberTwo" src="./images/seventeen.png" alt=""> <img class="icons"
+            src="./images/quiver.png" alt=""> </td>
       </div>
       <td class="td0"> </td>
       <td class="td0"> </td>
       <td class="td0"> </td>
       <td class="td0"> </td>
       <div id="case10">
-        <td class="orangesquare" id="10"> <img class="numberTwo" src="./images/ten.png" alt=""> <img class="icons" src="./images/elf.png" alt=""> </td>
+        <td class="orangesquare" id="10"> <img class="numberTwo" src="./images/ten.png" alt=""> <img class="icons"
+            src="./images/elf.png" alt=""> </td>
       </div>
 
     </tr>
     <tr>
       <div id="case16">
-        <td class="greensquare" id="16"> <img class="numberTwo" src="./images/sixteen.png" alt=""> <img class="icons" src="./images/mountain.png" alt=""> </td>
+        <td class="greensquare" id="16"> <img class="numberTwo" src="./images/sixteen.png" alt=""> <img class="icons"
+            src="./images/mountain.png" alt=""> </td>
       </div>
       <div id="case15">
-        <td class="orangesquare" id="15"> <img class="numberTwo" src="./images/fifteen.png" alt=""> <img class="icons" src="./images/elf.png" alt=""> </td>
+        <td class="orangesquare" id="15"> <img class="numberTwo" src="./images/fifteen.png" alt=""> <img class="icons"
+            src="./images/elf.png" alt=""> </td>
       </div>
       <div id="case14">
-        <td class="yellowsquare" id="14"> <img class="numberTwo" src="./images/fourteen.png" alt=""> <img class="icons" src="./images/sword.png" alt=""> </td>
+        <td class="yellowsquare" id="14"> <img class="numberTwo" src="./images/fourteen.png" alt=""> <img class="icons"
+            src="./images/sword.png" alt=""> </td>
       </div>
       <div id="case13">
         <td class="purplesquare" id="13"> <img class="numberTwo" src="./images/thirteen.png" alt=""> <img class="icons"
@@ -135,12 +168,14 @@
             alt=""> </td>
       </div>
       <div id="case12">
-        <td class="bluesquare" id="12"> <img class="numberTwo" src="./images/twelve.png" alt=""> <img class="icons" src="./images/quiver.png" alt=""> </td>
+        <td class="bluesquare" id="12"> <img class="numberTwo" src="./images/twelve.png" alt=""> <img class="icons"
+            src="./images/quiver.png" alt=""> </td>
       </div>
       <div id="case11">
-        <td class="greensquare" id="11"> <img class="numberTwo" src="./images/eleven.png" alt=""> <img class="icons" src="./images/mountain.png" alt=""> </td>
+        <td class="greensquare" id="11"> <img class="numberTwo" src="./images/eleven.png" alt=""> <img class="icons"
+            src="./images/mountain.png" alt=""> </td>
       </div>
-      </tr>
+    </tr>
   </table>
 
 
@@ -217,7 +252,7 @@
 
 
   <div>
-  <button id="reset">Rest the game</button>
+    <button id="reset">Rest the game</button>
   </div>
 
 </body>
