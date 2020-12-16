@@ -1,9 +1,10 @@
+import { rollDice } from "../js/dice.js";
+
 let partyPeople = [];
 let scorePlayerOne = 0;
 let scorePlayerTwo = 0;
 let scorePlayerThree = 0;
 let scorePlayerFour = 0;
-let indexStart = 0;
 let indexGame = 0;
 
 // start button
@@ -24,29 +25,11 @@ document.querySelector("#start").addEventListener("click", () => {
 
 // roll dice button
 document.querySelector("#dice").addEventListener("click", () => {
-	let scoresPlayersID = ['scorePlayerOne', 'scorePlayerTwo', 'scorePlayerThree', 'scorePlayerFour'];
-	let addBalls = ['.addRedBall', '.addBrownBall', '.addVioletBall', '.addBlackBall'];
-
 	let partyPeopleGame = Number(partyPeople[0]);
 	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);
 
-	// if (indexGame < partyPeopleGame){
-	// 	let child = document.querySelector(addBalls[indexGame]);
-	// 	console.log(child);
-	// 	document.getElementById(`${scorePlayerOne}`).removeChild(child);
+	rollDice(diceRoll);
 
-	// 	let addRedBall = document.createElement("p");
-	// 	addRedBall.setAttribute("class", "addRedBall");
-
-	// 	scorePlayerOne += diceRoll;
-	// 	document.getElementById(`${scorePlayerOne}`).appendChild(addRedBall);
-	// 	document.querySelector("#player-one").innerHTML = `Player one just threw ${diceRoll} and is on tile ${scorePlayerOne}.`
-	// 	indexGame ++;
-
-	// }
-	// else {
-	// 	alert("error");
-	// }
 	// player one
 	if (indexGame == 0){
 		let child = document.querySelector(".addRedBall");
@@ -119,12 +102,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 			return;
 		}
 	}
-
 })
 
 // reset the game
 document.querySelector("#reset").addEventListener("click", () =>{
 	location.reload();
 })
-
-  
