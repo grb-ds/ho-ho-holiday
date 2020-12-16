@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="board.css">
+    <link rel="stylesheet" type="text/css" href="./css/board.css">
     <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
     <style type="text/css"></style>
-    <script defer src="script.js" ></script>
+    <script defer src="./js/script.js" ></script>
     <script defer src="./apis/CallApis.js" ></script>
-    <script defer src="./dice.js"></script>
+    <script defer src="./js/dice.js"></script>
+
     
 
 
     <title>Document</title>
 </head>
 <body>
-
+<div class=board-section>
     <table border="1">
       <tr>
         <div id="case-0" class ="start" >  	<td class= "start" id="0" >   </td> </div>
@@ -106,10 +107,12 @@
       <div id="player-three"></div>
       <div id="player-four"></div>
     </div>
-    
-      <button id=start>Start</button>
-     <br>
-       <button id=dice>Throw dice</button>
+</div>
+
+<div class="button-section">
+  <button id=start>Start</button>
+     
+  <button id=dice>Throw dice</button>
        
 
     <div class="dice">
@@ -148,15 +151,13 @@
           <span class="dot"></span>
         </li>
       </ol>
-      
     </div>
     
-  
-
-      </div>
+    <div>
       <button id=reset>Rest the game</button>
     </div>
+</div>
+</div>
 
     </body>
-
 </html>
