@@ -1,21 +1,15 @@
-function rollDice() {
+const rollDice = (randomNumber) => {
     const dice = [...document.querySelectorAll(".die-list")];
     dice.forEach(die => {
       toggleClasses(die);
-      die.dataset.roll = getRandomNumber(1, 6);
+      die.dataset.roll = randomNumber;
     });
   }
   
-  function toggleClasses(die) {
-    die.classList.toggle("odd-roll");
-    die.classList.toggle("even-roll");
-  }
+const toggleClasses = (die) => {
+  die.classList.toggle("odd-roll");
+  die.classList.toggle("even-roll");
+}
   
-  function getRandomNumber(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  
-  document.getElementById("dice").addEventListener("click", rollDice);
-  
+export { rollDice };
+export { toggleClasses };  
