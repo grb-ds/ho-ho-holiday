@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+=======
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap");
+
+body {
+  background-color: beige;
+  height: 100%;
+  margin: 0;
+  font-family: "Andika New Basic", sans-serif;
+}
+
+.bg {
+  margin-top: 20px;
+  display: grid;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.icons {
+  width: 55px;
+  z-index: 1;
+}
+
+>>>>>>> main
 table {
   color: white;
   text-align: center;
@@ -58,7 +91,7 @@ td {
 
 .end {
   color: red;
-  background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
+  background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
 }
 
@@ -83,13 +116,6 @@ h2 {
 h3 {
   font-size: 130%;
 }
-body {
-  background: url("../images/lotr-background.jpg") no-repeat center center fixed;
-  margin: 0;
-  padding: 0;
-  -moz-background-size: cover; /*mozilla */
-  background-size: cover; /*standard*/
-}
 
 /* Colors: 
 
@@ -101,11 +127,6 @@ brown: #785039
 blue: #479298
 red: #922823
 */
-
-.icons {
-  width: 55px;
-  z-index: 1;
-}
 
 /* .startIcon {
 
@@ -148,10 +169,14 @@ red: #922823
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* styling for the dice */
 
 .dice {
   box-sizing: content-box !important;
+=======
+.dice {
+>>>>>>> main
   align-items: center;
   display: grid;
   grid-gap: 2rem;
@@ -159,7 +184,11 @@ red: #922823
   grid-template-rows: auto;
   justify-items: center;
   padding: 2rem;
+<<<<<<< HEAD
   /* perspective: 600px; */
+=======
+  perspective: 600px;
+>>>>>>> main
 }
 .die-list {
   display: grid;
@@ -320,3 +349,21 @@ red: #922823
 [data-side="6"] .dot:nth-of-type(6) {
   grid-area: nine;
 }
+<<<<<<< HEAD
+=======
+
+button {
+  align-self: center;
+  background-color: #efefef;
+  border: none;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 700;
+  justify-self: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+button:hover {
+  cursor: pointer;
+}
+>>>>>>> main
