@@ -122,7 +122,6 @@ document.querySelector("#dice").addEventListener("click", () => {
 	}
 })
 
-
 document.querySelector("#reset").addEventListener("click", () =>{
 	location.reload();
 })
