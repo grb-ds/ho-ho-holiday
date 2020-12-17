@@ -2,6 +2,7 @@ import { randomPicture } from "../js/WhatIsIt.js"
 import { displayModal } from "../js/WhatIsIt.js"
 import { winOrLose } from "../js/WhatIsIt.js"
 import { getRandomRiddle } from "../js/riddles.js"
+import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 
 
 let images = [{
@@ -168,7 +169,7 @@ const greengame = () => {
     let guesses = 0;
     let randomImage = randomPicture(images);
     displayModal(myModal);
-    winOrLose(randomImage.name, myModal, guesses, guess,submit);
+    winOrLose(randomImage.name, myModal, guesses);
 }
 
 const redgame = () => {
@@ -181,7 +182,7 @@ const orangeGame = () => {
     let guesses = 0;
     let randomRiddle = getRandomRiddle(riddles);
     displayModal(myModal3);
-    winOrLose(randomRiddle.answer,myModal3,guesses,guessRiddle,submitRiddle);
+    guessRiddleAnswer(randomRiddle.answer,myModal3,guesses);
 
 }
 
