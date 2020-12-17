@@ -12,8 +12,8 @@ export {
 
 let guesses = 0;
 
-const winOrLose = (answer, modal, guesses, guessID) => {
-    document.getElementById("submit").addEventListener("click", (event) => {
+const winOrLose = (answer, modal, guesses, guessID, submitID) => {
+    document.getElementById(submitID).addEventListener("click", (event) => {
 
         let guess = document.getElementById(guessID).value;
 

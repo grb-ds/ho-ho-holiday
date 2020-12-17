@@ -168,7 +168,7 @@ const greengame = () => {
     let guesses = 0;
     let randomImage = randomPicture(images);
     displayModal(myModal);
-    winOrLose(randomImage.name, myModal, guesses, guess);
+    winOrLose(randomImage.name, myModal, guesses, guess,submit);
 }
 
 const redgame = () => {
@@ -181,7 +181,7 @@ const orangeGame = () => {
     let guesses = 0;
     let randomRiddle = getRandomRiddle(riddles);
     displayModal(myModal3);
-    winOrLose(randomRiddle.answer,myModal3,guesses,guessRiddle);
+    winOrLose(randomRiddle.answer,myModal3,guesses,guessRiddle,submitRiddle);
 
 }
 
