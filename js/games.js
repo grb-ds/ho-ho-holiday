@@ -1,6 +1,7 @@
 import { randomPicture } from "../js/WhatIsIt.js"
 import { displayModal } from "../js/WhatIsIt.js"
 import { winOrLose } from "../js/WhatIsIt.js"
+import { memoryGame } from "../js/memory.js";
 import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 
@@ -178,37 +179,39 @@ const redgame = () => {
     displayModal(myModal1);
 }
 
+const bluegame = () => {
+    displayModal(myModal2);
+    memoryGame();
+}
+
 const orangeGame = () => {
     let guesses = 0;
     let randomRiddle = getRandomRiddle(riddles);
     displayModal(myModal3);
     guessRiddleAnswer(randomRiddle.answer,myModal3,guesses);
-
 }
+
 
 const differentGames = (element) => {
 
-
     switch (element) {
         case ("bluesquare"):
+            bluegame();
             // bluegame();
             break;
         case ("yellowsquare"):
         //    yellowgame();
             break;
         case ("greensquare"):
-                greengame();           
-                break;
+            greengame();           
+            break;
         case ("orangesquare"):
             orangeGame();
             break;
         case ("purplesquare"):
             redgame()
             break;
-            
     }
-
 };
 
-
-export { differentGames };
+export { differentGames }

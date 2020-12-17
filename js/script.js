@@ -4,17 +4,12 @@ import { differentGames } from "../js/games.js";
 
 
 
-
 let partyPeople = [];
 let scorePlayerOne = 0;
 let scorePlayerTwo = 0;
 let scorePlayerThree = 0;
 let scorePlayerFour = 0;
 let indexGame = 0;
-
-
-
-
 
 // start button
 document.querySelector("#start").addEventListener("click", () => {
@@ -32,6 +27,7 @@ document.querySelector("#start").addEventListener("click", () => {
 	}
 })
 
+
 // roll dice button
 document.querySelector("#dice").addEventListener("click", () => {
 
@@ -40,16 +36,17 @@ document.querySelector("#dice").addEventListener("click", () => {
 	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);
 	rollDice(diceRoll);
 	
-
+	// player one
 	if (indexGame == 0){
 		let child = document.querySelector(".addRedBall");
-		document.getElementById(`${scorePlayerOne}`).removeChild(child);
 
+		document.getElementById(`${scorePlayerOne}`).removeChild(child);
 		let addRedBall = document.createElement("p");
-		addRedBall.setAttribute("class", "addRedBall");
-		
+
 		scorePlayerOne += diceRoll;
+		addRedBall.setAttribute("class", "addRedBall");
 		document.getElementById(`${scorePlayerOne}`).appendChild(addRedBall);
+
 		document.querySelector("#player-one").innerHTML = `Player one just threw ${diceRoll} and is on tile ${scorePlayerOne}.`
 		indexGame ++;
 		if (indexGame == partyPeopleGame){
