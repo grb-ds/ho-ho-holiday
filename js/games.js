@@ -184,13 +184,11 @@ const bluegame = () => {
     memoryGame();
 }
 
-
 const orangeGame = () => {
     let guesses = 0;
     let randomRiddle = getRandomRiddle(riddles);
     displayModal(myModal3);
     guessRiddleAnswer(randomRiddle.answer,myModal3,guesses);
-
 }
 
 
