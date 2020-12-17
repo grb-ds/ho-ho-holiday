@@ -12,10 +12,10 @@ export {
 
 let guesses = 0;
 
-const winOrLose = (answer, modal, guesses) => {
+const winOrLose = (answer, modal, guesses, guessID) => {
     document.getElementById("submit").addEventListener("click", (event) => {
 
-        let guess = document.querySelector("#guess").value;
+        let guess = document.getElementById(guessID).value;
 
         event.preventDefault();
 

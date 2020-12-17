@@ -71,3 +71,15 @@ answer: "Fire",
 riddle: "What has six faces, but does not wear makeup, has twenty-one eyes, but cannot see? What is it?",
 answer: "A dice",
 }];
+
+function getRandomRiddle (array) {
+    let riddle = array[Math.floor(Math.random() * array.length)];
+    document.getElementById("riddle-box").innerText = riddle.riddle;
+    return riddle;
+}
+export { getRandomRiddle };
+
+
+
+
+
