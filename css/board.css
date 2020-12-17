@@ -5,6 +5,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Andika New Basic", sans-serif;
+  background-image: url(/images/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
 }
 
 .bg {
@@ -142,7 +144,7 @@ td {
 
 .end {
   color: red;
-  background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+  background-image: url("../images/.jpg");
   background-size: cover;
 }
 
