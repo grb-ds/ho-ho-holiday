@@ -1,7 +1,49 @@
-import { randomPicture } from "../js/WhatIsIt.js"
-import { displayModal } from "../js/WhatIsIt.js"
-import { winOrLose } from "../js/WhatIsIt.js"
+const randomPicture = (array) => {
+    let image = array[Math.floor(Math.random() * array.length)];
+    document.getElementById("image").src = image.src;
+    return image;
+};
 
+export {
+    randomPicture
+};
+
+let guesses = 0;
+
+const winOrLose = (answer, modal, guesses) => {
+    document.getElementById("submit").addEventListener("click", (event) => {
+
+        let guess = document.querySelector("#guess").value;
+
+        event.preventDefault();
+
+        if (guess == answer) {
+            alert("You win! Nice, now you get 3 points!");
+            modal.style.display = "none";
+        } else if (guesses > 3) {
+            alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
+            modal.style.display = "none";
+        } else {
+            alert("You have " + (4 - guesses) + " left.")
+            guesses++;
+        }
+    });
+
+};
+
+export {
+    winOrLose
+};
+
+
+const displayModal = (modal) => {
+    // Get the modal
+    modal.style.display = "block";
+}
+
+export {
+    displayModal
+};
 
 let images = [{
     name: "my precious",
@@ -74,34 +116,21 @@ let images = [{
     src: "../images/guesstheimage/hero.jpeg",
 }];
 
-const greengame = () => {
-    let guesses = 0;
-    let randomImage = randomPicture(images);
-    displayModal(myModal);
-    winOrLose(randomImage.name, myModal, guesses);
-}
-
-const differentGames = (element) => {
-
-    switch (element) {
-        case ("bluesquare"):
-            // bluegame();
-            break;
-        case ("yellowsquare"):
-        //    yellowgame();
-            break;
-        case ("greensquare"):
-                greengame();           
-                break;
-        case ("orangesquare"):
-            // orangegame();
-            break;
-        case ("purplesquare"):
-            console.log("That's a red square, sadly this means you don't get any points...")
-            break;
-    }
-
-};
 
 
-export { differentGames };
+// let randomImage = randomPicture(images);
+
+
+// document.querySelector(".click").addEventListener("click", () => {
+//     displayModal(myModal)
+// });
+
+
+
+
+// const gameOne = (input, image, modal, guesses) => {
+//     document.getElementById("submit").addEventListener("click", (event) => {
+//         event.preventDefault();
+//         winOrLose(input, image, modal, guesses);
+//     });
+// };
