@@ -75,6 +75,8 @@ document.querySelector("#dice").addEventListener("click", () => {
 			indexGame = 0;
 			return;
 		}
+		let colorClass = document.getElementById(scorePlayerTwo).className;
+		differentGames(colorClass);	
 	}
 
 	// player Three
@@ -93,6 +95,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 			indexGame = 0;
 			return;
 		}
+
+		let colorClass = document.getElementById(scorePlayerThree).className;
+		differentGames(colorClass);	
 	}
 
 	// player Four
@@ -111,6 +116,8 @@ document.querySelector("#dice").addEventListener("click", () => {
 			indexGame = 0;
 			return;
 		}
+		let colorClass = document.getElementById(scorePlayerFour).className;
+		differentGames(colorClass);	
 	}
 })
 
