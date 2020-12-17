@@ -1,0 +1,41 @@
+body {
+    background-color: silver;
+    text-align:center;
+}
+
+.button {
+    font-family: "Andika New Basic", sans-serif;
+    border: 2px solid;
+    background-color: #ff5368;
+    color: white;
+    border-radius: 8px;
+  }
+  .button:hover {
+    background-color: #ffc5cc;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 20px;
+  }
+  
+  .topnav a.active {
+    background-color: #af4f4c;
+    color: white;
+    border-radius: 20px;
+  }
