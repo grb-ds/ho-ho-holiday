@@ -420,3 +420,21 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+#myModal2 {
+  background-color: black;
+  opacity: 1;
+}
+#myModal2 .grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 150px;
+  grid-gap: 10px;
+  margin: auto;
+}
+
+#myModal2 img {
+  width: 75px;
+  height: auto;
+}
