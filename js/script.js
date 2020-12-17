@@ -1,4 +1,3 @@
-
 import { rollDice } from "../js/dice.js";
 
 let partyPeople = [];

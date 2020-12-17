@@ -53,6 +53,7 @@ p{
   height: 90px;
   width: 250px;
   cursor: pointer;
+  font-family: "Andika New Basic", sans-serif;
 }
 
 button:hover {
@@ -90,4 +91,15 @@ button:hover {
   background-color: #af4f4c;
   color: white;
   border-radius: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  text-align: center;
+  font-family: "Andika New Basic", sans-serif;
 }
