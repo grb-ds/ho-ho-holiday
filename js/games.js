@@ -193,7 +193,6 @@ const orangeGame = () => {
 
 }
 
-const differentGames = (element) => {
 
 const differentGames = (element) => {
 
@@ -217,4 +216,4 @@ const differentGames = (element) => {
     }
 };
 
-export { differentGames };
+export { differentGames }
