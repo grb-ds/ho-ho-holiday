@@ -96,6 +96,7 @@
       <button class="button" id=start>Start</button>
       <button class="button" id=dice>Throw dice</button>
       <button class="button" id=reset>Reset the game</button>
+
       <div class="dice">
           <ol class="die-list even-roll" data-roll="1" id="die-1">
             <li class="die-item" data-side="1">
@@ -156,10 +157,20 @@
     <div class="modal-content">
         <div>
             <img class="guessImage" id="evil-image" src="../img/red-game/nazgul.png" alt="red-card">
-            <p class="titleGuess">Too bad! You've got face to face with an evil monster! You loose 2 points!</p>
-            <button id="continue-game">Continue</button>
+            <span class="modal-close">&times;</span>
+          </div>
+    </div>
+  </div>
+  <div id="myModal2" class="modal">
+    <div class="modal-content">
+        <div>
+          <p>Play a game of memory</p>
+          <div class="grid">
+          </div>
         </div>
     </div>
   </div>
+
+
 </body>
 </html>

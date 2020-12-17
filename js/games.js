@@ -1,6 +1,7 @@
 import { randomPicture } from "../js/WhatIsIt.js"
 import { displayModal } from "../js/WhatIsIt.js"
 import { winOrLose } from "../js/WhatIsIt.js"
+import { memoryGame } from "../js/memory.js";
 
 
 let images = [{
@@ -95,29 +96,33 @@ const redgame = () => {
     displayModal(myModal1);
 }
 
-const differentGames = (element) => {
+const bluegame = () => {
+    displayModal(myModal2);
+    memoryGame();
+}
 
+
+
+const differentGames = (element) => {
 
     switch (element) {
         case ("bluesquare"):
+            bluegame();
             // bluegame();
             break;
         case ("yellowsquare"):
         //    yellowgame();
             break;
         case ("greensquare"):
-                greengame();           
-                break;
+            greengame();           
+            break;
         case ("orangesquare"):
             // orangegame();
             break;
         case ("purplesquare"):
             redgame()
             break;
-            
     }
-
 };
-
 
 export { differentGames };
