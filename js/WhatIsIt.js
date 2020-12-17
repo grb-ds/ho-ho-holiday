@@ -4,6 +4,8 @@ const randomPicture = (array) => {
     return image;
 };
 
+
+
 export {
     randomPicture
 };
