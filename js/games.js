@@ -82,6 +82,13 @@ const randomPictureEvil = (array) => {
     
 };
 
+document.querySelector(".modal-close").addEventListener("click", () => {
+    let modal = document.getElementById("myModal1");
+    // let modalImg = document.getElementById("evil-image");
+    // modalImg.src = "";
+    modal.style.display = "none";
+});
+
 const greengame = () => {
     let guesses = 0;
     let randomImage = randomPicture(images);
