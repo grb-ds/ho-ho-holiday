@@ -1,5 +1,7 @@
 import { rollDice } from "../js/dice.js";
-import { differentGames } from "../js/games.js"
+import { differentGames } from "../js/games.js";
+
+
 
 
 let partyPeople = [];
@@ -28,6 +30,7 @@ document.querySelector("#start").addEventListener("click", () => {
 
 // roll dice button
 document.querySelector("#dice").addEventListener("click", () => {
+
 	
 	let partyPeopleGame = Number(partyPeople[0]);
 	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);

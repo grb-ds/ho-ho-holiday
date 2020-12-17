@@ -13,9 +13,10 @@ export {
 let guesses = 0;
 
 const winOrLose = (answer, modal, guesses) => {
-    document.getElementById("submit").addEventListener("click", (event) => {
 
-        let guess = document.querySelector("#guess").value;
+    document.getElementById("submit").addEventListener("click", (event) => {
+        let guess = document.getElementById("guess").value;
+        console.log(guess);
 
         event.preventDefault();
 
@@ -37,6 +38,29 @@ export {
     winOrLose
 };
 
+
+const guessRiddleAnswer = (answer, modal, guesses) => {
+    document.getElementById("submitRiddle").addEventListener("click", (event) => {
+        event.preventDefault();
+
+        let guess = document.getElementById("guessRiddle").value;
+    
+
+        if (guess == answer) {
+            alert("You win! Nice, now you get 3 points!");
+            modal.style.display = "none";
+        } else if (guesses > 3) {
+            alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
+            modal.style.display = "none";
+        } else {
+            alert("You have " + (4 - guesses) + " left.")
+            guesses++;
+        }
+    });
+
+};
+
+export { guessRiddleAnswer };
 
 const displayModal = (modal) => {
     // Get the modal

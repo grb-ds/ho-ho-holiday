@@ -9,6 +9,7 @@
     <link rel="icon" href="img/favicon.png">
     <script defer type="module" src="./js/script.js" ></script>
     <script defer type="module" src="./js/dice.js"></script>
+    
     <title>The Game</title>
 </head>
 <body>
@@ -155,6 +156,7 @@
   </div>
   <div id="myModal1" class="modal">
     <div class="modal-content">
+      <span class="modal-close">&times;</span>
         <div>
             <img class="guessImage" id="evil-image" src="../img/red-game/nazgul.png" alt="red-card">
             <span class="modal-close">&times;</span>
@@ -168,6 +170,17 @@
           <div class="grid">
           </div>
         </div>
+    
+    </div>
+  </div>
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+     <p id="riddle-box"></p>
+     <form class="guessForm">
+      <input type="text" id="guessRiddle">
+      <input class="button" id="submitRiddle" type="submit" value="Submit">
+      <button id="continue-game">SKip</button>
+  </form>
     </div>
   </div>
 
