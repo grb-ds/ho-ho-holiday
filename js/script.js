@@ -25,9 +25,6 @@ document.querySelector("#start").addEventListener("click", () => {
 	}
 })
 
-document.querySelector("#test").addEventListener("click", () => {
-	differentGames("bluesquare");	
-})
 
 // roll dice button
 document.querySelector("#dice").addEventListener("click", () => {
@@ -36,7 +33,6 @@ document.querySelector("#dice").addEventListener("click", () => {
 	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);
 	rollDice(diceRoll);
 	
-
 	// player one
 	if (indexGame == 0){
 		let child = document.querySelector(".addRedBall");
