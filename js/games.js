@@ -15,7 +15,7 @@ let images = [{
     name: "the shire",
     src: "../images/guesstheimage/the-shire.jpeg",
 }, {
-    name: "smeagol",
+    name: "golum",
     src: "../images/guesstheimage/smeagol.jpeg",
 }, {
     name: "gandalf",
@@ -30,28 +30,28 @@ let images = [{
     name: "trilogy",
     src: "../images/guesstheimage/trilogy.jpeg",
 }, {
-    name: "sword",
+    name: "aragorn",
     src: "../images/guesstheimage/sword.jpeg",
 }, {
     name: "dwarves",
     src: "../images/guesstheimage/dwarves.jpeg",
 }, {
-    name: "beard",
+    name: "gimli",
     src: "../images/guesstheimage/beard.jpeg",
 }, {
-    name: "halfling",
+    name: "hobbits",
     src: "../images/guesstheimage/halfling.jpeg",
 }, {
     name: "mordor",
     src: "../images/guesstheimage/mordor.jpeg",
 }, {
-    name: "bow and arrow",
+    name: "legolas",
     src: "../images/guesstheimage/bow-and-arrow.jpeg",
 }, {
-    name: "forest",
+    name: "ents",
     src: "../images/guesstheimage/forest.jpeg",
 }, {
-    name: "eye",
+    name: "sauron",
     src: "../images/guesstheimage/eye.jpeg",
 }, {
     name: "orcs",
@@ -60,19 +60,19 @@ let images = [{
     name: "smaug",
     src: "../images/guesstheimage/smaug.jpeg",
 }, {
-    name: "dragon",
+    name: "smaug",
     src: "../images/guesstheimage/dragon.jpeg",
 }, {
     name: "wizard",
     src: "../images/guesstheimage/wizard.jpeg",
 }, {
-    name: "ax",
+    name: "gimli",
     src: "../images/guesstheimage/ax.jpeg",
 }, {
-    name: "adventure",
+    name: "fellowship",
     src: "../images/guesstheimage/adventure.jpeg",
 }, {
-    name: "hero",
+    name: "frodo",
     src: "../images/guesstheimage/hero.jpeg",
 }];
 
