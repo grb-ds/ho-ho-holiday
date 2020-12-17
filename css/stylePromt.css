@@ -4,23 +4,32 @@
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
+    padding-top: 30px;
+    /* Location of the box */
     /* center of the screen*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50%; /* Full width */
-    height: 50%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 50%;
+    /* Full width */
+    height: 60%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Black w/ opacity */
     text-align: center;
 }
 
@@ -28,7 +37,7 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 40%;
+    width: 50%;
     max-width: 700px;
     color: white;
 }
@@ -46,35 +55,32 @@
 }
 
 /* Add Animation */
-.modal-content, #caption {
+.modal-content,
+#caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 
-div.form {
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    color: white;
-}
-
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
@@ -96,8 +102,38 @@ form {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
+}
+
+
+.guessImage {
+    width: 100%;
+    max-height: 250px;
+}
+
+.guessForm>* {
+    margin: 15px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+.button {
+    font-family: "Andika New Basic", sans-serif;
+    border: 2px solid;
+    background-color: #ff5368;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+
+.titleGuess {
+    font-size: 20px;
+    margin-left: -30%;
+    width: 150%;
+    text-align: center;
 }
