@@ -420,3 +420,24 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+#myModal{
+  width: 1000px;
+  height:500px;
+  background-color:rgb(19, 97, 19);
+  text-align: center;
+}
+
+#myModal1{
+  width: 800px;
+  height:500px;
+  background-color:rgb(59, 54, 54);
+  text-align: center;
+}
+
+#evil-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px; 
+}
