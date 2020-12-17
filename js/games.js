@@ -74,6 +74,14 @@ let images = [{
     src: "../images/guesstheimage/hero.jpeg",
 }];
 
+const randomPictureEvil = (array) => {
+    let image = array[Math.floor(Math.random() * array.length)];
+    document.getElementById("evil-image").src = image;
+    console.log(image);
+    return image;
+    
+};
+
 const greengame = () => {
     let guesses = 0;
     let randomImage = randomPicture(images);
@@ -81,7 +89,14 @@ const greengame = () => {
     winOrLose(randomImage.name, myModal, guesses);
 }
 
+const redgame = () => {
+    let evilImage = ["../img/red-game/ballrog.jpg", "../img/red-game/nazgul.png", "../img/red-game/saruman.png"]
+    randomPictureEvil(evilImage);   
+    displayModal(myModal1);
+}
+
 const differentGames = (element) => {
+
 
     switch (element) {
         case ("bluesquare"):
@@ -97,8 +112,9 @@ const differentGames = (element) => {
             // orangegame();
             break;
         case ("purplesquare"):
-            console.log("That's a red square, sadly this means you don't get any points...")
+            redgame()
             break;
+            
     }
 
 };
