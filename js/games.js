@@ -6,7 +6,6 @@ import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 import { puzzleGame } from "../js/puzzle.js"
 
-
 let images = [{
     name: "my precious",
     src: "../images/guesstheimage/my-precious.jpeg"
@@ -200,7 +199,6 @@ const differentGames = (element) => {
     switch (element) {
         case ("bluesquare"):
             bluegame();
-            // bluegame();
             break;
         case ("yellowsquare"):
            yellowGame();

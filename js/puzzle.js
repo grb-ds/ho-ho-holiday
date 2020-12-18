@@ -1,14 +1,15 @@
 const puzzleGame = () => {
 
     let imgPuzzle1 = new Image();
-    imgPuzzle1.src = './images/puzzel1.jpg';
-    imgPuzzle1.style.width = '600px';
-    imgPuzzle1.style.height = '600px';
+    imgPuzzle1.src = '../images/puzzel1.jpg';
+    console.log(imgPuzzle1.src)
+    // imgPuzzle1.style.width = '600px';
+    // imgPuzzle1.style.height = '600px';
 
     let numColsToCut = 3;
     let numRowsToCut = 3;
-    let widthOfOnePiece = 200;
-    let heightOfOnePiece = 200;
+    let widthOfOnePiece = 190;
+    let heightOfOnePiece = 190;
 
     let isNotComplete = true;
 
@@ -39,9 +40,9 @@ const puzzleGame = () => {
     }
 
     const checkPuzzle = () => {
-
         for (let i = 0; i < puzzleOrder.length; i++ ) {
             let currentDiv = document.getElementById(puzzleOrder[i].divId);
+            console.log(currentDiv);
             let rightOrder = Number(currentDiv.getAttribute("order"));
             let imgId =  currentDiv.firstElementChild.getAttribute("id");
 
@@ -103,7 +104,7 @@ const puzzleGame = () => {
     /*
     https://web.dev/drag-and-drop/
     */
-    document.addEventListener('DOMContentLoaded', (event) => {
+    // document.addEventListener('DOMContentLoaded', (event) => {
 
         let dragSrcEl = null;
 
@@ -165,7 +166,7 @@ const puzzleGame = () => {
             item.addEventListener('drop', handleDrop, false);
             item.addEventListener('dragend', handleDragEnd, false);
         });
-    });
+    // });
 
 
     cutImage();

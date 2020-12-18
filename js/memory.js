@@ -62,7 +62,7 @@ const memoryGame = () => {
         function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             let card = document.createElement('img')
-            card.setAttribute('src', '../images/images-memory-game/blank.png')
+            card.setAttribute('src', './images/images-memory-game/blank.png')
             card.setAttribute('data-id', i)
             card.setAttribute('id', 'memoryCards')
             card.addEventListener('click', flipCard)
@@ -77,20 +77,20 @@ const memoryGame = () => {
         let optionTwoId = cardsChosenId[1]
         
         if(optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute('src', '../images/images-memory-game/blank.png')
-            cards[optionTwoId].setAttribute('src', '../images/images-memory-game/blank.png')
+            cards[optionOneId].setAttribute('src', './images/images-memory-game/blank.png')
+            cards[optionTwoId].setAttribute('src', './images/images-memory-game/blank.png')
             alert('You have clicked the same image!')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', '../images/images-memory-game/white.png')
-            cards[optionTwoId].setAttribute('src', '../images/images-memory-game/white.png')
+            cards[optionOneId].setAttribute('src', './images/images-memory-game/white.png')
+            cards[optionTwoId].setAttribute('src', './images/images-memory-game/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', '../images/images-memory-game/blank.png')
-            cards[optionTwoId].setAttribute('src', '../images/images-memory-game/blank.png')
+            cards[optionOneId].setAttribute('src', './images/images-memory-game/blank.png')
+            cards[optionTwoId].setAttribute('src', './images/images-memory-game/blank.png')
             alert('Sorry, try again')
         }
         cardsChosen = []
