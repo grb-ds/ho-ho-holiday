@@ -45,13 +45,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 
 		document.querySelector("#player-one").innerHTML = `Player one just threw ${diceRoll} and is on tile ${scorePlayerOne}.`
 		indexGame ++;
+		let colorClass = document.getElementById(scorePlayerOne).className;
+		differentGames(colorClass);	
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
 		}
-
-		let colorClass = document.getElementById(scorePlayerOne).className;
-		differentGames(colorClass);	
 	}
 
 	// player Two
@@ -66,12 +65,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerTwo}`).appendChild(addBrownBall);
 		document.querySelector("#player-two").innerHTML = `Player two just threw ${diceRoll} and is on tile ${scorePlayerTwo}.`
 		indexGame ++;
+		let colorClass = document.getElementById(scorePlayerTwo).className;
+		differentGames(colorClass);	
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
 		}
-		let colorClass = document.getElementById(scorePlayerTwo).className;
-		differentGames(colorClass);	
 	}
 
 	// player Three
@@ -86,13 +85,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerThree}`).appendChild(addVioletBall);
 		document.querySelector("#player-three").innerHTML = `Player three just threw ${diceRoll} and is on tile ${scorePlayerThree}.`
 		indexGame ++;
+		let colorClass = document.getElementById(scorePlayerThree).className;
+		differentGames(colorClass);	
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
 		}
-
-		let colorClass = document.getElementById(scorePlayerThree).className;
-		differentGames(colorClass);	
 	}
 
 	// player Four
@@ -107,12 +105,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerFour}`).appendChild(addBlackBall);
 		document.querySelector("#player-four").innerHTML = `Player four just threw ${diceRoll} and is on tile ${scorePlayerFour}.`
 		indexGame ++;
+		let colorClass = document.getElementById(scorePlayerFour).className;
+		differentGames(colorClass);	
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
 		}
-		let colorClass = document.getElementById(scorePlayerFour).className;
-		differentGames(colorClass);	
 	}
 })
 
