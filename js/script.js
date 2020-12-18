@@ -1,9 +1,6 @@
 import { rollDice } from "../js/dice.js";
 import { differentGames } from "../js/games.js";
 
-
-
-
 let partyPeople = [];
 let scorePlayerOne = 0;
 let scorePlayerTwo = 0;
@@ -30,10 +27,9 @@ document.querySelector("#start").addEventListener("click", () => {
 
 // roll dice button
 document.querySelector("#dice").addEventListener("click", () => {
-
 	
 	let partyPeopleGame = Number(partyPeople[0]);
-	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);
+	let diceRoll = 4;
 	rollDice(diceRoll);
 	
 	// player one
@@ -57,7 +53,6 @@ document.querySelector("#dice").addEventListener("click", () => {
 		let colorClass = document.getElementById(scorePlayerOne).className;
 		differentGames(colorClass);	
 	}
-
 
 	// player Two
 	else if(indexGame == 1 && indexGame !== partyPeopleGame){

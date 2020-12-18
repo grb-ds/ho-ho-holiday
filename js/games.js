@@ -4,6 +4,7 @@ import { winOrLose } from "../js/WhatIsIt.js"
 import { memoryGame } from "../js/memory.js";
 import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
+import { puzzleGame } from "../js/puzzle.js"
 
 
 let images = [{
@@ -188,6 +189,11 @@ const orangeGame = () => {
     guessRiddleAnswer(randomRiddle.answer,myModal3,guesses);
 }
 
+const yellowGame = () => {
+    displayModal(myModal4);
+    puzzleGame();
+}
+
 
 const differentGames = (element) => {
 
@@ -197,7 +203,7 @@ const differentGames = (element) => {
             // bluegame();
             break;
         case ("yellowsquare"):
-        //    yellowgame();
+           yellowGame();
             break;
         case ("greensquare"):
             greengame();           

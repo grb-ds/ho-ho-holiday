@@ -44,8 +44,7 @@ const guessRiddleAnswer = (answer, modal, guesses) => {
         event.preventDefault();
 
         let guess = document.getElementById("guessRiddle").value;
-    
-
+  
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
             modal.style.display = "none";
