@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap"); */
+
+* {
+  margin: 0;
+  padding:0;
+}
+
 
 body {
   background-color: beige;
   height: 100%;
   margin: 0;
   font-family: "Andika New Basic", sans-serif;
-  background-image: url(/images/wallpaperflare.com_wallpaper.jpg);
+  background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: lighten;
@@ -58,8 +64,7 @@ td {
   display: grid;
   grid-template-rows: auto auto auto auto;
 }
-.board-section {
-}
+
 #info {
   padding: 15px 0 15px 0;
   margin-left: auto;
@@ -183,7 +188,7 @@ h3 {
   width: 20px;
 }
 .addRedBall {
-  background-image: url(/images/elf-pon.png);
+  background-image: url("../images/elf-pon.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -193,7 +198,7 @@ h3 {
 }
 
 .addBrownBall {
-  background-image: url(/images/rohirim.png);
+  background-image: url("../images/rohirim.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -203,7 +208,7 @@ h3 {
 }
 
 .addVioletBall {
-  background-image: url(/images/hobbit.png);
+  background-image: url("../images/hobbit.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -212,7 +217,7 @@ h3 {
   background-color: violet;
 }
 .addBlackBall {
-  background-image: url(/images/archer.png);
+  background-image: url("../images/archer.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -431,9 +436,9 @@ button:hover {
 }
 
 #image {
-  width: 200%;
-  height: auto;
-  margin-left: -100px;
+  max-height: 300px;
+  margin-left: -40px;
+  padding: 10px
 }
 
 .modal-close {
@@ -453,17 +458,59 @@ button:hover {
   cursor: pointer;
 }
 
+
+.modal-close-2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close-2:hover,
+.modal-close-2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-close-4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close-4:hover,
+.modal-close-4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
+  padding-top: 20px; /* Location of the box */
+  padding-bottom:20px;
   /* center of the screen*/
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+<<<<<<< HEAD
   width: 100%; /* Full width */
   height: 100%; /* Full height */
+=======
+  width: 60%; /* Full width */
+  height: 50%; /* Full height */
+>>>>>>> 0a21c09d5e252fd14fd1f5ea24649da6110fb010
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
@@ -472,7 +519,7 @@ button:hover {
 
 .modal-content {
   display: block;
-  max-width: 700px;
+  max-width: 1000px;
   color: white;
   height: auto;
   width: auto;
