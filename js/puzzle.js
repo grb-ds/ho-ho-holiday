@@ -1,7 +1,7 @@
 const puzzleGame = () => {
 
     let imgPuzzle1 = new Image();
-    imgPuzzle1.src = '../images/puzzel1.jpg';
+    imgPuzzle1.src = './images/puzzel1.jpg';
     console.log(imgPuzzle1.src)
     // imgPuzzle1.style.width = '600px';
     // imgPuzzle1.style.height = '600px';
