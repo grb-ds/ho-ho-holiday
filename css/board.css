@@ -189,7 +189,7 @@ h3 {
   width: 20px;
 }
 .addRedBall {
-  background-image: url(/images/elf-pon.png);
+  background-image: url("../images/elf-pon.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -199,7 +199,7 @@ h3 {
 }
 
 .addBrownBall {
-  background-image: url(/images/rohirim.png);
+  background-image: url("../images/rohirim.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -209,7 +209,7 @@ h3 {
 }
 
 .addVioletBall {
-  background-image: url(/images/hobbit.png);
+  background-image: url("../images/hobbit.png");
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -218,7 +218,7 @@ h3 {
   background-color: violet;
 }
 .addBlackBall {
-  background-image: url(/images/archer.png);
+  background-image: url("../images/archer.png");
   background-size: cover;
   height: 50px;
   width: 50px;
