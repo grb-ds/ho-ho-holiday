@@ -8,73 +8,73 @@ import { puzzleGame } from "../js/puzzle.js"
 
 let images = [{
     name: "my precious",
-    src: "../images/guesstheimage/my-precious.jpeg"
+    src: "./images/guesstheimage/my-precious.jpeg"
 }, {
     name: "frodo",
-    src: "../images/guesstheimage/frodo.jpeg",
+    src: "./images/guesstheimage/frodo.jpeg",
 }, {
     name: "the shire",
-    src: "../images/guesstheimage/the-shire.jpeg",
+    src: "./images/guesstheimage/the-shire.jpeg",
 }, {
     name: "golum",
-    src: "../images/guesstheimage/smeagol.jpeg",
+    src: "./images/guesstheimage/smeagol.jpeg",
 }, {
     name: "gandalf",
-    src: "../images/guesstheimage/gandalf.jpeg",
+    src: "./images/guesstheimage/gandalf.jpeg",
 }, {
     name: "hobbit",
-    src: "../images/guesstheimage/hobbit.jpeg",
+    src: "./images/guesstheimage/hobbit.jpeg",
 }, {
     name: "elves",
-    src: "../images/guesstheimage/elves.jpeg",
+    src: "./images/guesstheimage/elves.jpeg",
 }, {
     name: "trilogy",
-    src: "../images/guesstheimage/trilogy.jpeg",
+    src: "./images/guesstheimage/trilogy.jpeg",
 }, {
     name: "aragorn",
-    src: "../images/guesstheimage/sword.jpeg",
+    src: "./images/guesstheimage/sword.jpeg",
 }, {
     name: "dwarves",
-    src: "../images/guesstheimage/dwarves.jpeg",
+    src: "./images/guesstheimage/dwarves.jpeg",
 }, {
     name: "gimli",
-    src: "../images/guesstheimage/beard.jpeg",
+    src: "./images/guesstheimage/beard.jpeg",
 }, {
     name: "hobbits",
-    src: "../images/guesstheimage/halfling.jpeg",
+    src: "./images/guesstheimage/halfling.jpeg",
 }, {
     name: "mordor",
-    src: "../images/guesstheimage/mordor.jpeg",
+    src: "./images/guesstheimage/mordor.jpeg",
 }, {
     name: "legolas",
-    src: "../images/guesstheimage/bow-and-arrow.jpeg",
+    src: "./images/guesstheimage/bow-and-arrow.jpeg",
 }, {
     name: "ents",
-    src: "../images/guesstheimage/forest.jpeg",
+    src: "./images/guesstheimage/forest.jpeg",
 }, {
     name: "sauron",
-    src: "../images/guesstheimage/eye.jpeg",
+    src: "./images/guesstheimage/eye.jpeg",
 }, {
     name: "orcs",
-    src: "../images/guesstheimage/orcs.jpeg",
+    src: "./images/guesstheimage/orcs.jpeg",
 }, {
     name: "smaug",
-    src: "../images/guesstheimage/smaug.jpeg",
+    src: "./images/guesstheimage/smaug.jpeg",
 }, {
     name: "smaug",
-    src: "../images/guesstheimage/dragon.jpeg",
+    src: "./images/guesstheimage/dragon.jpeg",
 }, {
     name: "wizard",
-    src: "../images/guesstheimage/wizard.jpeg",
+    src: "./images/guesstheimage/wizard.jpeg",
 }, {
     name: "gimli",
-    src: "../images/guesstheimage/ax.jpeg",
+    src: "./images/guesstheimage/ax.jpeg",
 }, {
     name: "fellowship",
-    src: "../images/guesstheimage/adventure.jpeg",
+    src: "./images/guesstheimage/adventure.jpeg",
 }, {
     name: "frodo",
-    src: "../images/guesstheimage/hero.jpeg",
+    src: "./images/guesstheimage/hero.jpeg",
 }];
 
 let riddles = [{
