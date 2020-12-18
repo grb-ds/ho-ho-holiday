@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap"); */
 
 * {
   margin: 0;
@@ -64,8 +64,7 @@ td {
   display: grid;
   grid-template-rows: auto auto auto auto;
 }
-.board-section {
-}
+
 #info {
   padding: 15px 0 15px 0;
   margin-left: auto;
