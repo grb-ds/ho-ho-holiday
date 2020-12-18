@@ -181,7 +181,7 @@ const greengame = () => {
 }
 
 const redgame = () => {
-    let evilImage = ["../img/red-game/ballrog.jpg", "../img/red-game/nazgul.png", "../img/red-game/saruman.png"]
+    let evilImage = ["./img/red-game/ballrog.jpg", "./img/red-game/nazgul.png", "./img/red-game/saruman.png"]
     randomPictureEvil(evilImage);   
     displayModal(myModal1);
 }
