@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <script defer src="./js/puzzel.js"></script>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+        }
+        .cell {
+            background-color: lightblue;
+            border: solid 1px blue;
+            cursor: move;
+        }
+
+        .cell.over {
+            border: 3px dotted #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="1" class="cell" draggable="true" order = "0"><img class="grid-image-item" id="tile1"></div>
+    <div id="2" class="cell" draggable="true" order = "3"><img class="grid-image-item" id="tile2"></div>
+    <div id="3" class="cell" draggable="true" order = "6"><img class="grid-image-item" id="tile3"></div>
+    <div id="4" class="cell" draggable="true" order = "1"><img class="grid-image-item" id="tile4"></div>
+    <div id="5" class="cell" draggable="true" order = "4"><img class="grid-image-item" id="tile5"></div>
+    <div id="6" class="cell" draggable="true" order = "7"><img class="grid-image-item" id="tile6"></div>
+    <div id="7" class="cell" draggable="true" order = "2"><img class="grid-image-item" id="tile7"></div>
+    <div id="8" class="cell" draggable="true" order = "5"><img class="grid-image-item" id="tile8"></div>
+    <div id="9" class="cell" draggable="true" order = "8"><img class="grid-image-item" id="tile9"></div>
+</div>
+
+<div>
+    <button id = "stop">Ok</button>
+</div>
+</body>
+</html>
