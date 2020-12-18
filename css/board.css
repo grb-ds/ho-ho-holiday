@@ -78,6 +78,7 @@ td {
   background-color: #ff5368;
   color: white;
   border-radius: 8px;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #ffc5cc;
@@ -406,6 +407,7 @@ button {
   justify-self: center;
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+  cursor: pointer;
 }
 button:hover {
   cursor: pointer;
