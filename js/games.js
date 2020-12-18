@@ -154,15 +154,12 @@ answer: "A dice",
 const randomPictureEvil = (array) => {
     let image = array[Math.floor(Math.random() * array.length)];
     document.getElementById("evil-image").src = image;
-    console.log(image);
     return image;
     
 };
 
 document.querySelector(".modal-close").addEventListener("click", () => {
-    let modal = document.getElementById("myModal1");
-    // let modalImg = document.getElementById("evil-image");
-    // modalImg.src = "";
+    let modal = document.querySelector("#myModal1");
     modal.style.display = "none";
 });
 
