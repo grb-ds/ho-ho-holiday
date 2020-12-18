@@ -533,3 +533,7 @@ button:hover {
 #myModal4 .cell.over {
   border: 3px dotted #666;
 }
+
+#memoryCards{
+  cursor: pointer;
+}
