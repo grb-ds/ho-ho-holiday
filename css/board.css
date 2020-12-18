@@ -2,9 +2,8 @@
 
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-
 
 body {
   background-color: beige;
@@ -440,7 +439,7 @@ button:hover {
 #image {
   max-height: 300px;
   margin-left: -40px;
-  padding: 10px
+  padding: 10px;
 }
 
 .modal-close {
@@ -459,7 +458,6 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .modal-close-2 {
   position: absolute;
@@ -495,13 +493,12 @@ button:hover {
   cursor: pointer;
 }
 
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 20px; /* Location of the box */
-  padding-bottom:20px;
+  padding-bottom: 20px;
   /* center of the screen*/
   left: 50%;
   top: 50%;
