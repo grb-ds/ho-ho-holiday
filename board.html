@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/board.css">
-    <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
-    <style type="text/css"></style>
-    <link rel="icon" href="img/favicon.png">
-    <script defer type="module" src="./js/script.js" ></script>
-    <script defer type="module" src="./js/dice.js"></script>
-    
-    <title>The Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/board.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylePromt.css">
+  <style type="text/css"></style>
+  <link rel="icon" href="img/favicon.png">
+  <script defer type="module" src="./js/script.js"></script>
+  <script defer type="module" src="./js/dice.js"></script>
+
+  <title>The Game</title>
 </head>
+
 <body>
   <div class="topnav">
     <a href="index.html">Home</a>
@@ -20,77 +22,141 @@
     <a href="about.html">About</a>
     <a href="help.html">Contact</a>
   </div>
- 
+
   <div class="bg">
     <div class="board-section">
-        <table>
-          <tr>
-            <div id="case-0" class ="start" >  	<td class= "start" id="0" >   </td> </div>
-            <div id="case1">  	<td class= "greensquare" id="1" > 1 
-            <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-            <div id="case2">  	<td class= "bluesquare" id="2" > 2 <img class="icons" src="./images/quiver.png" alt=""> </td> </div>
-            <div id="case3"> <td class= "purplesquare" id="3" >3 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt=""> </td> </div>
-            <div id="case4">  	<td class= "yellowsquare" id="4" > 4  <img class="icons" src="./images/sword.png" alt="">
-            </td> </div>
-            <div id="case5"> <td class= "orangesquare" id="5" > 5   <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-          </tr>
-          <tr>
-            <td class="td0">   </td>
-            <td class="td0">   </td>
-            <td class="td0">   </td>
-            <td class="td0">   </td>
-            <td class="td0">   </td>
-            <div id="case-1" class ="case" > 	<td class= "greensquare" id="6" > 6  <img class="icons" src="./images/mountain.png" alt=""> </td>   </div>
+      <table>
+        <tr>
+          <div id="case-0" class="start">
+            <td class="start" id="0"> </td>
+          </div>
+          <div id="case1">
+            <td class="greensquare" id="1"> 1
+              <img class="icons" src="./images/mountain.png" alt=""> </td>
+          </div>
+          <div id="case2">
+            <td class="bluesquare" id="2"> 2 <img class="icons" src="./images/quiver.png" alt=""> </td>
+          </div>
+          <div id="case3">
+            <td class="purplesquare" id="3">3 <img class="icons"
+                src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+                alt=""> </td>
+          </div>
+          <div id="case4">
+            <td class="yellowsquare" id="4"> 4 <img class="icons" src="./images/sword.png" alt="">
+            </td>
+          </div>
+          <div id="case5">
+            <td class="orangesquare" id="5"> 5 <img class="icons" src="./images/elf.png" alt=""> </td>
+          </div>
         </tr>
-          <tr> 
-            <div id="case20">  	<td class= "orangesquare" id="20" > 20  <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-            <div id="case21"> 	<td class= "greensquare" id="21" > 21  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-            <div id="cas22"> 	<td class= "bluesquare" id="22" > 22  <img class="icons" src="./images/quiver.png" alt=""> </td> </div>
-            <div id="case23">  	<td class= "purplesquare" id="23" > 23 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt=""> </td></div>
-            <td class="td0">   </td>
-            <div id="case7">	<td class= "bluesquare" id="7" > 7 <img class="icons" src="./images/quiver.png" alt="">  </td> </div>
+        <tr>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <div id="case-1" class="case">
+            <td class="greensquare" id="6"> 6 <img class="icons" src="./images/mountain.png" alt=""> </td>
+          </div>
         </tr>
-          <tr> 
-            <div id="case19">  	<td class= "yellowsquare" id="19" > 19  <img class="icons" src="./images/sword.png" alt=""> </td> </div>
-            <td class="td0">   </td> 
-            <td class="td0">   </td> 
-            <div id="case24">  	<td class= "yellowsquare" id="24" > 24 <img class="icons" src="./images/sword.png" alt="">  </td> </div>
-            <td class="td0">   </td> 
-            <div id="case8">	<td class= "purplesquare" id="8" >  8 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt="">  </td> </div>
-          </tr> 
-          <tr> 
-            <div id="case18"> 	<td class= "purplesquare" id="18" > 18    <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt="">  </td> </div>
-            <td class="td0">    </td> 
-            <td class= "end" id="26" ></td>
-            <div id="case25">  	<td class= "orangesquare" id="25" > 25    <img class="icons" src="./images/elf.png" alt="">   </td></div>
-            <td class="td0">   </td> 
-            <div id="case9">  	<td class= "yellowsquare" id="9" > 9     <img class="icons" src="./images/sword.png" alt="">   </td></div>
-          </tr> 
-          <tr> 
-            <div id="case17">  	<td class= "bluesquare" id="17" > 17 <img class="icons" src="./images/quiver.png" alt=""> </td> </div>
-            <td class="td0">   </td> 
-            <td class="td0">   </td> 
-            <td class="td0">   </td> 
-            <td class="td0">   </td> 
-            <div id="case10">  	<td class= "orangesquare" id="10" > 10  <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-          </tr>
-          <tr> 
-            <div id="case16">  	<td class= "greensquare" id="16" > 16  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-            <div id="case15">  	<td class= "orangesquare" id="15" > 15   <img class="icons" src="./images/elf.png" alt=""> </td> </div>
-            <div id="case14">  <td class= "yellowsquare" id="14" > 14  <img class="icons" src="./images/sword.png" alt=""> </td> </div>
-            <div id="case13">  	<td class= "purplesquare" id="13" > 13 <img class="icons" src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png" alt=""> </td></div>
-            <div id="case12">  	<td class= "bluesquare" id="12" > 12 <img class="icons" src="./images/quiver.png" alt=""> </td></div>
-            <div id="case11"> 	<td class= "greensquare" id="11" > 11  <img class="icons" src="./images/mountain.png" alt=""> </td> </div>
-        </table>  
-      
-        <div id="info">
-          <div id="player-turn">Welcome to our game! You can play this from 1 to 4 players. But first, you have to tell us how many of you are playing by pressing the 'Start' button. Have fun!</div>
-          <div id="party-people"></div>
-          <div id="player-one"></div>
-          <div id="player-two"></div>
-          <div id="player-three"></div>
-          <div id="player-four"></div>
-        </div>
+        <tr>
+          <div id="case20">
+            <td class="orangesquare" id="20"> 20 <img class="icons" src="./images/elf.png" alt=""> </td>
+          </div>
+          <div id="case21">
+            <td class="greensquare" id="21"> 21 <img class="icons" src="./images/mountain.png" alt=""> </td>
+          </div>
+          <div id="cas22">
+            <td class="bluesquare" id="22"> 22 <img class="icons" src="./images/quiver.png" alt=""> </td>
+          </div>
+          <div id="case23">
+            <td class="purplesquare" id="23"> 23 <img class="icons"
+                src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+                alt=""> </td>
+          </div>
+          <td class="td0"> </td>
+          <div id="case7">
+            <td class="bluesquare" id="7"> 7 <img class="icons" src="./images/quiver.png" alt=""> </td>
+          </div>
+        </tr>
+        <tr>
+          <div id="case19">
+            <td class="yellowsquare" id="19"> 19 <img class="icons" src="./images/sword.png" alt=""> </td>
+          </div>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <div id="case24">
+            <td class="yellowsquare" id="24"> 24 <img class="icons" src="./images/sword.png" alt=""> </td>
+          </div>
+          <td class="td0"> </td>
+          <div id="case8">
+            <td class="purplesquare" id="8"> 8 <img class="icons"
+                src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+                alt=""> </td>
+          </div>
+        </tr>
+        <tr>
+          <div id="case18">
+            <td class="purplesquare" id="18"> 18 <img class="icons"
+                src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+                alt=""> </td>
+          </div>
+          <td class="td0"> </td>
+          <td class="end" id="26"></td>
+          <div id="case25">
+            <td class="orangesquare" id="25"> 25 <img class="icons" src="./images/elf.png" alt=""> </td>
+          </div>
+          <td class="td0"> </td>
+          <div id="case9">
+            <td class="yellowsquare" id="9"> 9 <img class="icons" src="./images/sword.png" alt=""> </td>
+          </div>
+        </tr>
+        <tr>
+          <div id="case17">
+            <td class="bluesquare" id="17"> 17 <img class="icons" src="./images/quiver.png" alt=""> </td>
+          </div>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <td class="td0"> </td>
+          <div id="case10">
+            <td class="orangesquare" id="10"> 10 <img class="icons" src="./images/elf.png" alt=""> </td>
+          </div>
+        </tr>
+        <tr>
+          <div id="case16">
+            <td class="greensquare" id="16"> 16 <img class="icons" src="./images/mountain.png" alt=""> </td>
+          </div>
+          <div id="case15">
+            <td class="orangesquare" id="15"> 15 <img class="icons" src="./images/elf.png" alt=""> </td>
+          </div>
+          <div id="case14">
+            <td class="yellowsquare" id="14"> 14 <img class="icons" src="./images/sword.png" alt=""> </td>
+          </div>
+          <div id="case13">
+            <td class="purplesquare" id="13"> 13 <img class="icons"
+                src="./images/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png"
+                alt=""> </td>
+          </div>
+          <div id="case12">
+            <td class="bluesquare" id="12"> 12 <img class="icons" src="./images/quiver.png" alt=""> </td>
+          </div>
+          <div id="case11">
+            <td class="greensquare" id="11"> 11 <img class="icons" src="./images/mountain.png" alt=""> </td>
+          </div>
+        </tr>
+      </table>
+
+      <div id="info">
+        <div id="player-turn">Welcome to our game! You can play this from 1 to 4 players. But first, you have to tell us
+          how many of you are playing by pressing the 'Start' button. Have fun!</div>
+        <div id="party-people"></div>
+        <div id="player-one"></div>
+        <div id="player-two"></div>
+        <div id="player-three"></div>
+        <div id="player-four"></div>
+      </div>
     </div>
 
     <div class="button-section">
@@ -99,109 +165,112 @@
       <button class="button" id="reset">Reset the game</button>
 
       <div class="dice">
-          <ol class="die-list even-roll" data-roll="1" id="die-1">
-            <li class="die-item" data-side="1">
-              <span class="dot"></span>
-            </li>
-            <li class="die-item" data-side="2">
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </li>
-            <li class="die-item" data-side="3">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </li>
-            <li class="die-item" data-side="4">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </li>
-            <li class="die-item" data-side="5">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </li>
-            <li class="die-item" data-side="6">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </li>
-          </ol>
+        <ol class="die-list even-roll" data-roll="1" id="die-1">
+          <li class="die-item" data-side="1">
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="2">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="3">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="4">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="5">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="6">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+        </ol>
       </div>
     </div>
   </div>
   <div class="footer">
     <p>Copyright 2020 BeCode</p>
-  <div>
-  </div>
+    <div>
+    </div>
     <div id="myModal" class="modal">
       <div class="modal-content">
-              <p class="titleGuess">You have 5 guesses to figure out what is shown on the picture, nothing is what it seems! <br> (Don't start with a capital letter)</p>
-              <img class="guessImage" id="image" src="../images/guessTheImage/frodo.jpeg" alt="">
-          </div>
-          <form class="guessForm">
-              <input type="text" id="guess">
-              <input class="button" id="submit" type="submit" value="Submit">
-          </form>
+        <p class="titleGuess">You have 5 guesses to figure out what is shown on the picture, nothing is what it seems!
+          <br> (Don't start with a capital letter)</p>
+        <img class="guessImage" id="image" src="../images/guesstheimage/frodo.jpeg" alt="">
       </div>
+      <form class="guessForm">
+        <input type="text" id="guess">
+        <input class="button" id="submit" type="submit" value="Submit">
+      </form>
+    </div>
   </div>
   <div id="myModal1" class="modal">
     <div class="modal-content">
       <span class="modal-close">&times;</span>
-        <div>
-            <p>What a bad day, Mordor got you.</p>
-            <img class="guessImage" id="evil-image" src="../img/red-game/nazgul.png" alt="red-card">
-          </div>
+      <div>
+        <p>What a bad day, Mordor got you.</p>
+        <img class="guessImage" id="evil-image" src="../img/red-game/nazgul.png" alt="red-card">
+      </div>
     </div>
   </div>
   <div id="myModal2" class="modal">
     <div class="modal-content">
       <span class="modal-close-2">&times;</span>
-        <div>
-          <p>CLick on two cards and try to find a pair</p>
-          <div class="grid">
-          </div>
+      <div>
+        <p>CLick on two cards and try to find a pair</p>
+        <div class="grid">
         </div>
-    
+      </div>
+
     </div>
   </div>
   <div id="myModal3" class="modal">
     <div class="modal-content">
-     <p id="riddle-box"></p>
-     <form class="guessForm">
-      <input type="text" id="guessRiddle" placeholder="Your answer">
-      <input class="button" id="submitRiddle" type="submit" value="Submit">
+      <p id="riddle-box"></p>
+      <form class="guessForm">
+        <input type="text" id="guessRiddle" placeholder="Your answer">
+        <input class="button" id="submitRiddle" type="submit" value="Submit">
       </form>
     </div>
   </div>
   <div id="myModal4" class="modal">
     <div class="modal-content">
       <span class="modal-close-4">&times;</span>
-     <p id="puzzle-game">Make the puzzle</p>
-     <div class="container">
-        <div id="puzzle1" class="cell" draggable="true" order = "0"><img class="grid-image-item" id="tile1"></div>
-        <div id="puzzle2" class="cell" draggable="true" order = "3"><img class="grid-image-item" id="tile2"></div>
-        <div id="puzzle3" class="cell" draggable="true" order = "6"><img class="grid-image-item" id="tile3"></div>
-        <div id="puzzle4" class="cell" draggable="true" order = "1"><img class="grid-image-item" id="tile4"></div>
-        <div id="puzzle5" class="cell" draggable="true" order = "4"><img class="grid-image-item" id="tile5"></div>
-        <div id="puzzle6" class="cell" draggable="true" order = "7"><img class="grid-image-item" id="tile6"></div>
-        <div id="puzzle7" class="cell" draggable="true" order = "2"><img class="grid-image-item" id="tile7"></div>
-        <div id="puzzle8" class="cell" draggable="true" order = "5"><img class="grid-image-item" id="tile8"></div>
-        <div id="puzzle9" class="cell" draggable="true" order = "8"><img class="grid-image-item" id="tile9"></div>
-      <div>
-      <div>
-        <button id = "stop">Ok</button>
+      <p id="puzzle-game">Make the puzzle</p>
+      <div class="container">
+        <div id="puzzle1" class="cell" draggable="true" order="0"><img class="grid-image-item" id="tile1"></div>
+        <div id="puzzle2" class="cell" draggable="true" order="3"><img class="grid-image-item" id="tile2"></div>
+        <div id="puzzle3" class="cell" draggable="true" order="6"><img class="grid-image-item" id="tile3"></div>
+        <div id="puzzle4" class="cell" draggable="true" order="1"><img class="grid-image-item" id="tile4"></div>
+        <div id="puzzle5" class="cell" draggable="true" order="4"><img class="grid-image-item" id="tile5"></div>
+        <div id="puzzle6" class="cell" draggable="true" order="7"><img class="grid-image-item" id="tile6"></div>
+        <div id="puzzle7" class="cell" draggable="true" order="2"><img class="grid-image-item" id="tile7"></div>
+        <div id="puzzle8" class="cell" draggable="true" order="5"><img class="grid-image-item" id="tile8"></div>
+        <div id="puzzle9" class="cell" draggable="true" order="8"><img class="grid-image-item" id="tile9"></div>
+        <div>
+          <div>
+            <button id="stop">Ok</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-
 </body>
+
 </html>
