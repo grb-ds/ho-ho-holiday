@@ -11,7 +11,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Andika New Basic", sans-serif;
-  background-image: url(/images/wallpaperflare.com_wallpaper.jpg);
+  background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: lighten;
