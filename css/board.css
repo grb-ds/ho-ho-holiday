@@ -459,6 +459,24 @@ button:hover {
   cursor: pointer;
 }
 
+.modal-close-1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close-1:hover,
+.modal-close-1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .modal-close-2 {
   position: absolute;
   top: 15px;
@@ -475,6 +493,24 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal-close-3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close-3:hover,
+.modal-close-3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .modal-close-4 {
   position: absolute;
