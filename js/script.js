@@ -22,6 +22,9 @@ document.querySelector("#start").addEventListener("click", () => {
 		addBall.setAttribute("class", addBalls[i]);
 		document.getElementById('0').append(addBall);
 	}
+
+	document.querySelector("#start").disabled = true;
+
 })
 
 

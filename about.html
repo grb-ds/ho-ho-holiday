@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/about.css">
     <link rel="icon" href="img/favicon.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
     <title>About us</title>
 </head>
 <body>
@@ -15,8 +16,52 @@
         <a class="active" href="about.html">About</a>
         <a href="help.html">Contact</a>
       </div>
-    <div class="about">
-        <p>Game developped by Christophe, Giomara, Maureen and Adrien as a Javascript exercice for Becode training.</p>
+    <div class="about m-2 md:flex">
+
+        <div class="card border rounded h-auto w-52 m-4 p-4" id="adrien">
+            <div class="p-2">
+                <img src="./images/becode/adrien.jpeg" class="shadow rounded-full max-w-full h-auto align-middle border-none">
+            </div>
+            <div class="">
+                <div class="font-bold text-2xl">Adrien<br>Clesse</div><br>
+                <div class="text-sm">Student for BeCode</div><br>
+                <div class="rounded-full py-2 px-4 bg-blue-400 text-white"><a href="https://github.com/adrienclesse">GitHub profile</a></div>
+            </div>
+        </div>
+
+        <div class="card border rounded h-auto w-52 m-4 p-4" id="giomayra">
+            <div class="p-2">
+                <img src="./images/becode/giomayra.jpeg" class="shadow rounded-full max-w-full h-auto align-middle border-none">
+            </div>
+            <div class="">
+                <div class="font-bold text-2xl">Giomayra<br>Rosales</div><br>
+                <div class="text-sm">Student for BeCode</div><br>
+                <div class="rounded-full py-2 px-4 bg-blue-400 text-white"><a href="https://github.com/grb-ds">GitHub profile</a></div>
+            </div>
+        </div>
+
+        <div class="card border rounded h-auto w-52 m-4 p-4" id="maureen">
+            <div class="p-2">
+                <img src="./images/becode/maureen.jpeg" class="shadow rounded-full max-w-full h-auto align-middle border-none">
+            </div>
+            <div class="">
+                <div class="font-bold text-2xl">Maureen<br>Oldyck</div><br>
+                <div class="text-sm">Student for BeCode</div><br>
+                <div class="rounded-full py-2 px-4 bg-blue-400 text-white"><a href="https://github.com/maureenoldyck">GitHub profile</a></div>
+            </div>
+        </div>
+
+        <div class="card border rounded h-auto w-52 m-4 p-4" id="christophe">
+            <div class="p-2">
+                <img src="./images/becode/christophe.jpeg" class="shadow rounded-full max-w-full h-auto align-middle border-none">
+            </div>
+            <div class="">
+                <div class="font-bold text-2xl">Christophe<br>Adriaensens</div><br>
+                <div class="text-sm">Student for BeCode</div><br>
+                <div class="rounded-full py-2 px-4 bg-blue-400 text-white"><a href="https://github.com/maureenoldyck">GitHub profile</a></div>
+            </div>
+        </div>
+
     </div>
     <div class="footer">
         <p>Copyright 2020 BeCode</p>
