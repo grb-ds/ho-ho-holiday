@@ -1,4 +1,5 @@
 
+const puzzleaGame = () => {
 $(document).ready(function() {
     var rows = 4, columns =4;
     var pieces="";
@@ -31,3 +32,7 @@ $(document).ready(function() {
      $("#puzzleContainer").html(pieces);
     });
 });
+
+}
+
+export { puzzleaGame };

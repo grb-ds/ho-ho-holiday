@@ -5,76 +5,79 @@ import { memoryGame } from "../js/memory.js";
 import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 import { puzzleGame } from "../js/puzzle.js"
+import { puzzleaGame } from "../js/puzzlea.js"
+
+
 
 let images = [{
     name: "my precious",
-    src: "./images/guesstheimage/my-precious.jpeg"
+    src: "../images/guesstheimage/my-precious.jpeg"
 }, {
     name: "frodo",
-    src: "./images/guesstheimage/frodo.jpeg",
+    src: "../images/guesstheimage/frodo.jpeg",
 }, {
     name: "the shire",
-    src: "./images/guesstheimage/the-shire.jpeg",
+    src: "../images/guesstheimage/the-shire.jpeg",
 }, {
     name: "golum",
-    src: "./images/guesstheimage/smeagol.jpeg",
+    src: "../images/guesstheimage/smeagol.jpeg",
 }, {
     name: "gandalf",
-    src: "./images/guesstheimage/gandalf.jpeg",
+    src: "../images/guesstheimage/gandalf.jpeg",
 }, {
     name: "hobbit",
-    src: "./images/guesstheimage/hobbit.jpeg",
+    src: "../images/guesstheimage/hobbit.jpeg",
 }, {
     name: "elves",
-    src: "./images/guesstheimage/elves.jpeg",
+    src: "../images/guesstheimage/elves.jpeg",
 }, {
     name: "trilogy",
-    src: "./images/guesstheimage/trilogy.jpeg",
+    src: "../images/guesstheimage/trilogy.jpeg",
 }, {
     name: "aragorn",
-    src: "./images/guesstheimage/sword.jpeg",
+    src: "../images/guesstheimage/sword.jpeg",
 }, {
     name: "dwarves",
-    src: "./images/guesstheimage/dwarves.jpeg",
+    src: "../images/guesstheimage/dwarves.jpeg",
 }, {
     name: "gimli",
-    src: "./images/guesstheimage/beard.jpeg",
+    src: "../images/guesstheimage/beard.jpeg",
 }, {
     name: "hobbits",
-    src: "./images/guesstheimage/halfling.jpeg",
+    src: "../images/guesstheimage/halfling.jpeg",
 }, {
     name: "mordor",
-    src: "./images/guesstheimage/mordor.jpeg",
+    src: "../images/guesstheimage/mordor.jpeg",
 }, {
     name: "legolas",
-    src: "./images/guesstheimage/bow-and-arrow.jpeg",
+    src: "../images/guesstheimage/bow-and-arrow.jpeg",
 }, {
     name: "ents",
-    src: "./images/guesstheimage/forest.jpeg",
+    src: "../images/guesstheimage/forest.jpeg",
 }, {
     name: "sauron",
-    src: "./images/guesstheimage/eye.jpeg",
+    src: "../images/guesstheimage/eye.jpeg",
 }, {
     name: "orcs",
-    src: "./images/guesstheimage/orcs.jpeg",
+    src: "../images/guesstheimage/orcs.jpeg",
 }, {
     name: "smaug",
-    src: "./images/guesstheimage/smaug.jpeg",
+    src: "../images/guesstheimage/smaug.jpeg",
 }, {
     name: "smaug",
-    src: "./images/guesstheimage/dragon.jpeg",
+    src: "../images/guesstheimage/dragon.jpeg",
 }, {
     name: "wizard",
-    src: "./images/guesstheimage/wizard.jpeg",
+    src: "../images/guesstheimage/wizard.jpeg",
 }, {
     name: "gimli",
-    src: "./images/guesstheimage/ax.jpeg",
+    src: "../images/guesstheimage/ax.jpeg",
 }, {
     name: "fellowship",
-    src: "./images/guesstheimage/adventure.jpeg",
+    src: "../images/guesstheimage/adventure.jpeg",
 }, {
     name: "frodo",
-    src: "./images/guesstheimage/hero.jpeg",
+    src: "../images/guesstheimage/hero.jpeg",
 }];
 
 let riddles = [{
@@ -158,34 +161,9 @@ const randomPictureEvil = (array) => {
     
 };
 
-document.querySelector(".modal-close-1").addEventListener("click", () => {
+document.querySelector(".modal-close").addEventListener("click", () => {
     let modal = document.querySelector("#myModal1");
     modal.style.display = "none";
-    document.querySelector("#dice").disabled = false;
-});
-
-document.querySelector(".modal-close-2").addEventListener("click", () => {
-    let modal = document.querySelector("#myModal2");
-    modal.style.display = "none";
-    document.querySelector("#dice").disabled = false;
-});
-
-document.querySelector(".modal-close-4").addEventListener("click", () => {
-    let modal = document.querySelector("#myModal4");
-    modal.style.display = "none";
-    document.querySelector("#dice").disabled = false;
-});
-
-document.querySelector(".modal-close").addEventListener("click", () => {
-    let modal = document.querySelector("#myModal");
-    modal.style.display = "none";
-    document.querySelector("#dice").disabled = false;
-});
-
-document.querySelector(".modal-close-3").addEventListener("click", () => {
-    let modal = document.querySelector("#myModal3");
-    modal.style.display = "none";
-    document.querySelector("#dice").disabled = false;
 });
 
 const greengame = () => {
@@ -196,7 +174,7 @@ const greengame = () => {
 }
 
 const redgame = () => {
-    let evilImage = ["./img/red-game/ballrog.jpg", "./img/red-game/nazgul.png", "./img/red-game/saruman.png"]
+    let evilImage = ["../img/red-game/ballrog.jpg", "../img/red-game/nazgul.png", "../img/red-game/saruman.png"]
     randomPictureEvil(evilImage);   
     displayModal(myModal1);
 }
@@ -215,7 +193,7 @@ const orangeGame = () => {
 
 const yellowGame = () => {
     displayModal(myModal4);
-    puzzleGame();
+    puzzleaGame();
 }
 
 
@@ -224,6 +202,7 @@ const differentGames = (element) => {
     switch (element) {
         case ("bluesquare"):
             bluegame();
+            // bluegame();
             break;
         case ("yellowsquare"):
            yellowGame();
