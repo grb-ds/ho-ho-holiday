@@ -70,6 +70,7 @@ export { guessRiddleAnswer };
 const displayModal = (modal) => {
     // Get the modal
     modal.style.display = "block";
+    document.querySelector("#dice").disabled = true;
 }
 
 export {

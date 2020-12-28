@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url("https://allfont.net/allfont.css?fonts=elvish-ring-nfi");
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Elvish Ring NFI", arial;
+  background-image: url(../img/lotr-background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#game {
+  font-family: "Andika New Basic", sans-serif;
+  text-align: left;
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 80px;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #af4f4c;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(10, 10, 10);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Andika New Basic", sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20px;
+}
+
+.topnav a.active {
+  background-color: #af4f4c;
+  color: white;
+  border-radius: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  text-align: center;
+  font-family: "Andika New Basic", sans-serif;
+}

@@ -1,4 +1,4 @@
-import { rollDice } from "../js/dice.js";
+import { rollDice  } from "../js/dice.js";
 import { differentGames } from "../js/games.js";
 
 let partyPeople = [];
@@ -38,6 +38,9 @@ document.querySelector("#start").addEventListener("click", () => {
 		newPlayer.ball = addBalls[i];
 		playersArray.push(newPlayer);
 	}
+
+	document.querySelector("#start").disabled = true;
+
 })
 
 
