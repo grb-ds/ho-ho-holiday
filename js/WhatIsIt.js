@@ -64,6 +64,7 @@ export { guessRiddleAnswer };
 const displayModal = (modal) => {
     // Get the modal
     modal.style.display = "block";
+    modal.style.boxSizing = "border-box";
 }
 
 export {
