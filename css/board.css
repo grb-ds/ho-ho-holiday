@@ -78,6 +78,7 @@ td {
   background-color: #ff5368;
   color: white;
   border-radius: 8px;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #ffc5cc;
@@ -165,6 +166,11 @@ td {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 h1 {
@@ -406,9 +412,10 @@ button {
   justify-self: center;
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+  cursor: pointer;
 }
 button:hover {
-  cursor: pointer;
+  transform:scale(1.1);
 }
 
 #myModal2 {
@@ -458,6 +465,24 @@ button:hover {
   cursor: pointer;
 }
 
+.modal-close-1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close-1:hover,
+.modal-close-1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .modal-close-2 {
   position: absolute;
   top: 15px;
@@ -474,6 +499,24 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal-close-3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close-3:hover,
+.modal-close-3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .modal-close-4 {
   position: absolute;
