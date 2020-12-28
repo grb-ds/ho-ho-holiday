@@ -162,9 +162,26 @@ const randomPictureEvil = (array) => {
 };
 
 document.querySelector(".modal-close").addEventListener("click", () => {
+    let modal = document.querySelector("#myModal");
+    modal.style.display = "none";
+});
+document.querySelector(".modal-close-1").addEventListener("click", () => {
     let modal = document.querySelector("#myModal1");
     modal.style.display = "none";
 });
+document.querySelector(".modal-close-2").addEventListener("click", () => {
+    let modal = document.querySelector("#myModal2");
+    modal.style.display = "none";
+});
+document.querySelector(".modal-close-3").addEventListener("click", () => {
+    let modal = document.querySelector("#myModal3");
+    modal.style.display = "none";
+});
+document.querySelector(".modal-close-4").addEventListener("click", () => {
+    let modal = document.querySelector("#myModal4");
+    modal.style.display = "none";
+});
+
 
 const greengame = () => {
     let guesses = 0;
