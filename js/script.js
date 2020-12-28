@@ -7,6 +7,18 @@ let scorePlayerTwo = 0;
 let scorePlayerThree = 0;
 let scorePlayerFour = 0;
 let indexGame = 0;
+const playersArray = [];
+
+function Player(id) {
+	this.id = id
+	this.score = 0;
+	this.position = 0;
+	//this.ball = {};
+	this.ball = "";
+	this.currentDice = 0;
+	this.turn = false;
+	this.currentTile = "";
+}
 
 // start button
 document.querySelector("#start").addEventListener("click", () => {
@@ -21,6 +33,10 @@ document.querySelector("#start").addEventListener("click", () => {
 		addBall = document.createElement("p");
 		addBall.setAttribute("class", addBalls[i]);
 		document.getElementById('0').append(addBall);
+		//for player Object
+		let newPlayer = new Player(i);
+		newPlayer.ball = addBalls[i];
+		playersArray.push(newPlayer);
 	}
 })
 
@@ -44,9 +60,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 		document.getElementById(`${scorePlayerOne}`).appendChild(addRedBall);
 
 		document.querySelector("#player-one").innerHTML = `Player one just threw ${diceRoll} and is on tile ${scorePlayerOne}.`
-		indexGame ++;
+		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerOne).className;
-		differentGames(colorClass);	
+		//for player object
+		playersArray[indexGame].currentTile = colorClass;
+		differentGames(colorClass, playersArray[indexGame]);	
+		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
@@ -64,9 +83,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 		scorePlayerTwo += diceRoll;
 		document.getElementById(`${scorePlayerTwo}`).appendChild(addBrownBall);
 		document.querySelector("#player-two").innerHTML = `Player two just threw ${diceRoll} and is on tile ${scorePlayerTwo}.`
-		indexGame ++;
+		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerTwo).className;
-		differentGames(colorClass);	
+		//for player object
+		playersArray[indexGame].currentTile = colorClass;
+		differentGames(colorClass, playersArray[indexGame]);	
+		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
@@ -84,9 +106,12 @@ document.querySelector("#dice").addEventListener("click", () => {
 		scorePlayerThree += diceRoll;
 		document.getElementById(`${scorePlayerThree}`).appendChild(addVioletBall);
 		document.querySelector("#player-three").innerHTML = `Player three just threw ${diceRoll} and is on tile ${scorePlayerThree}.`
-		indexGame ++;
+		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerThree).className;
-		differentGames(colorClass);	
+		//for player object
+		playersArray[indexGame].currentTile = colorClass;
+		differentGames(colorClass, playersArray[indexGame]);	
+		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
@@ -104,14 +129,19 @@ document.querySelector("#dice").addEventListener("click", () => {
 		scorePlayerFour += diceRoll;
 		document.getElementById(`${scorePlayerFour}`).appendChild(addBlackBall);
 		document.querySelector("#player-four").innerHTML = `Player four just threw ${diceRoll} and is on tile ${scorePlayerFour}.`
-		indexGame ++;
+		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerFour).className;
-		differentGames(colorClass);	
+		//for player object
+		playersArray[indexGame].currentTile = colorClass;
+		differentGames(colorClass, playersArray[indexGame]);	
+		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
 			return;
 		}
 	}
+
+	console.log(playersArray);
 })
 
 document.querySelector("#reset").addEventListener("click", () =>{

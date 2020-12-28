@@ -1,4 +1,6 @@
-const puzzleGame = () => {
+import { scoreboard } from "../js/scores.js";
+
+const puzzleGame = (player) => {
 
     let imgPuzzle1 = new Image();
     imgPuzzle1.src = './images/puzzel1.jpg';
@@ -97,7 +99,11 @@ const puzzleGame = () => {
     document.querySelector("#stop").addEventListener("click",()=>{
         let items = document.querySelectorAll('.container .cell');
         console.log(items);
-        alert(checkPuzzle());
+        if (checkPuzzle()){
+            player.score += scoreboard(player.currentTile);
+        } else {
+            player.score -= scoreboard(player.currentTile);
+        }
         //console.log("checkPuzzle" , checkPuzzle());
     });
 

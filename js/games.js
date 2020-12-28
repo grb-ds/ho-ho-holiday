@@ -5,6 +5,7 @@ import { memoryGame } from "../js/memory.js";
 import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 import { puzzleGame } from "../js/puzzle.js"
+import { scoreboard } from "../js/scores.js";
 
 let images = [{
     name: "my precious",
@@ -173,54 +174,55 @@ document.querySelector(".modal-close-4").addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-const greengame = () => {
+const greengame = (player) => {
     let guesses = 0;
     let randomImage = randomPicture(images);
     displayModal(myModal);
-    winOrLose(randomImage.name, myModal, guesses);
+    winOrLose(randomImage.name, myModal, guesses, player);
 }
 
-const redgame = () => {
+const redgame = (player) => {
     let evilImage = ["./img/red-game/ballrog.jpg", "./img/red-game/nazgul.png", "./img/red-game/saruman.png"]
     randomPictureEvil(evilImage);   
     displayModal(myModal1);
+    player.score -= scoreboard(player.currentTile); //always lost 2 points
 }
 
-const bluegame = () => {
+const bluegame = (player) => {
     displayModal(myModal2);
-    memoryGame();
+    memoryGame(player);
 }
 
-const orangeGame = () => {
+const orangeGame = (player) => {
     let guesses = 0;
     let randomRiddle = getRandomRiddle(riddles);
     displayModal(myModal3);
-    guessRiddleAnswer(randomRiddle.answer,myModal3,guesses);
+    guessRiddleAnswer(randomRiddle.answer,myModal3,guesses,player);
 }
 
-const yellowGame = () => {
+const yellowGame = (player) => {
     displayModal(myModal4);
-    puzzleGame();
+    puzzleGame(player);
 }
 
 
-const differentGames = (element) => {
+const differentGames = (element, player) => {
 
     switch (element) {
         case ("bluesquare"):
-            bluegame();
+            bluegame(player);
             break;
         case ("yellowsquare"):
-           yellowGame();
+           yellowGame(player);
             break;
         case ("greensquare"):
-            greengame();           
+            greengame(player);           
             break;
         case ("orangesquare"):
-            orangeGame();
+            orangeGame(player);
             break;
         case ("purplesquare"):
-            redgame()
+            redgame(player)
             break;
     }
 };
