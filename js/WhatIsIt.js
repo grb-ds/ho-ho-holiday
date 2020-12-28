@@ -49,11 +49,9 @@ const guessRiddleAnswer = (answer, modal, guesses, player) => {
   
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
-            modal.style.display = "none";
             player.score += scoreboard(player.currentTile);
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
-            modal.style.display = "none";
             player.score -= scoreboard(player.currentTile);
         } else {
             alert("You have " + (4 - guesses) + " left.")
