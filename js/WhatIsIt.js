@@ -1,3 +1,5 @@
+import { scoreboard } from "../js/scores.js";
+
 const randomPicture = (array) => {
     let image = array[Math.floor(Math.random() * array.length)];
     document.getElementById("image").src = image.src;
@@ -12,7 +14,7 @@ export {
 
 let guesses = 0;
 
-const winOrLose = (answer, modal, guesses) => {
+const winOrLose = (answer, modal, guesses, player) => {
 
     document.getElementById("submit").addEventListener("click", (event) => {
         let guess = document.getElementById("guess").value;
@@ -23,9 +25,11 @@ const winOrLose = (answer, modal, guesses) => {
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
             modal.style.display = "none";
+            player.score += scoreboard(player.currentTile);
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
             modal.style.display = "none";
+            player.score -= scoreboard(player.currentTile);
         } else {
             alert("You have " + (4 - guesses) + " left.")
             guesses++;
@@ -39,7 +43,7 @@ export {
 };
 
 
-const guessRiddleAnswer = (answer, modal, guesses) => {
+const guessRiddleAnswer = (answer, modal, guesses, player) => {
     document.getElementById("submitRiddle").addEventListener("click", (event) => {
         event.preventDefault();
 
@@ -48,9 +52,11 @@ const guessRiddleAnswer = (answer, modal, guesses) => {
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
             modal.style.display = "none";
+            player.score += scoreboard(player.currentTile);
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
             modal.style.display = "none";
+            player.score -= scoreboard(player.currentTile);
         } else {
             alert("You have " + (4 - guesses) + " left.")
             guesses++;

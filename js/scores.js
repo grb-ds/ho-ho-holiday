@@ -5,19 +5,23 @@ const scoreboard = (element) => {
 
     switch (element) {
         case ("bluesquare"):
-            score = score + 5;
+            //score = score + 5;
+            score = 5;
             break;
         case ("yellowsquare"):
-            score = score + 4;
+            //score = score + 4;
+            score = 4;
             break;
         case ("greensquare"):
+            //score = score + 3;
             score = score + 3;
             break;
         case ("orangesquare"):
-            score = score + 2;
+            //score = score + 2;
+            score = 2;
             break;
         case ("purplesquare"):
-            score = score + 0;
+            //score = score + 0;
             break;
     }
 
@@ -39,3 +43,5 @@ const showHighscore = () => {
         localStorage.setItem("highscore", score);
     }
 }
+
+export { scoreboard };
