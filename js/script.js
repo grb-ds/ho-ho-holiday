@@ -1,4 +1,4 @@
-import { rollDice } from "../js/dice.js";
+import { rollDice  } from "../js/dice.js";
 import { differentGames } from "../js/games.js";
 
 let partyPeople = [];
