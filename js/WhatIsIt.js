@@ -22,10 +22,8 @@ const winOrLose = (answer, modal, guesses) => {
 
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
-            modal.style.display = "none";
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
-            modal.style.display = "none";
         } else {
             alert("You have " + (4 - guesses) + " left.")
             guesses++;
@@ -47,10 +45,8 @@ const guessRiddleAnswer = (answer, modal, guesses) => {
   
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
-            modal.style.display = "none";
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
-            modal.style.display = "none";
         } else {
             alert("You have " + (4 - guesses) + " left.")
             guesses++;
