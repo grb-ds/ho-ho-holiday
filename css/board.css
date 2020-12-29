@@ -418,10 +418,7 @@ button:hover {
   transform:scale(1.1);
 }
 
-#myModal2 {
-  background-color: black;
-  opacity: 1;
-}
+
 #myModal2 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -437,9 +434,7 @@ button:hover {
 }
 
 #evil-image {
-  width: 250%;
   height: auto;
-  margin-left: -170px;
 }
 
 #image {
@@ -551,14 +546,17 @@ button:hover {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
   text-align: center;
+  justify-content: center;
 }
 
 .modal-content {
   display: block;
-  max-width: 1000px;
   color: white;
-  height: auto;
-  width: auto;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
 }
 
 #myModal4 .container {
