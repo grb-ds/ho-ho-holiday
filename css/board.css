@@ -580,3 +580,32 @@ button:hover {
 #memoryCards {
   cursor: pointer;
 }
+
+
+
+.small-screen-box {
+  background-color: #333;
+  padding: 10%;
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%); 
+  color: white;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+  
+  .game { 
+    display: none;
+  }
+
+  .small-screen-box {
+    display: block;
+  }
+
+  
+}

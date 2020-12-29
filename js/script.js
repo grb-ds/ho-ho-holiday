@@ -30,9 +30,15 @@ function Player() {
 
 // start button
 document.querySelector("#start").addEventListener("click", () => {
-	let amountPeople = prompt("How many people are playing?", "1 to 4 players.");
+
+	let amountPeople = 0;
+	do { 
+		amountPeople = prompt("How many people are playing?", "1 to 4 players.")
+	} while (amountPeople > 4 || amountPeople < 1 || isNaN(amountPeople));
+
 	partyPeople.push(amountPeople);
-	document.querySelector("#party-people").innerHTML = `There are ${amountPeople} people playing.`
+	
+	document.querySelector("#party-people").innerHTML = `There are ${amountPeople} people playing.`;
 
 	let addBalls = ['addRedBall', 'addBrownBall', 'addVioletBall', 'addBlackBall'];
 
