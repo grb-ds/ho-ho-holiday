@@ -4,7 +4,6 @@ const puzzleGame = (player) => {
 
     let imgPuzzle1 = new Image();
     imgPuzzle1.src = './images/puzzel1.jpg';
-    console.log(imgPuzzle1.src)
     // imgPuzzle1.style.width = '600px';
     // imgPuzzle1.style.height = '600px';
 
@@ -44,13 +43,10 @@ const puzzleGame = (player) => {
     const checkPuzzle = () => {
         for (let i = 0; i < puzzleOrder.length; i++ ) {
             let currentDiv = document.getElementById(puzzleOrder[i].divId);
-            console.log(currentDiv);
             let rightOrder = Number(currentDiv.getAttribute("order"));
             let imgId =  currentDiv.firstElementChild.getAttribute("id");
 
             let currentPuzzle = puzzleOrder.find(element => element.tileId === imgId);
-            console.log("rightOrder", rightOrder);
-            console.log("currentPuzzle", currentPuzzle);
             if (rightOrder !== currentPuzzle.indexImage){
                 return false;
             }
@@ -86,9 +82,6 @@ const puzzleGame = (player) => {
             let currentPuzzle = puzzleOrder.find(element => element.tileId === img.id);
             currentPuzzle.indexImage = indexImage;
         });
-        console.log("puzzleOrder",puzzleOrder);
-        console.log(document.querySelectorAll(".cell"));
-
     }
 
 
@@ -98,7 +91,6 @@ const puzzleGame = (player) => {
 
     document.querySelector("#stop").addEventListener("click",()=>{
         let items = document.querySelectorAll('.container .cell');
-        console.log(items);
         if (checkPuzzle()){
             player.score += scoreboard(player.currentTile);
         } else {

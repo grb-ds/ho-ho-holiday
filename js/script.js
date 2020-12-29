@@ -1,5 +1,13 @@
-import { rollDice  } from "../js/dice.js";
-import { differentGames } from "../js/games.js";
+import {
+	rollDice
+} from "../js/dice.js";
+import {
+	differentGames
+} from "../js/games.js";
+
+import { 
+	winner
+} from "../js/games.js";
 
 let partyPeople = [];
 let scorePlayerOne = 0;
@@ -46,20 +54,32 @@ document.querySelector("#start").addEventListener("click", () => {
 
 // roll dice button
 document.querySelector("#dice").addEventListener("click", () => {
-	
+
 	let partyPeopleGame = Number(partyPeople[0]);
 	
 	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);
 	rollDice(diceRoll);
-	
+
 	// player one
-	if (indexGame == 0){
+	if (indexGame == 0) {
+
 		let child = document.querySelector(".addRedBall");
 
 		document.getElementById(`${scorePlayerOne}`).removeChild(child);
 		let addRedBall = document.createElement("p");
 
 		scorePlayerOne += diceRoll;
+
+		if (scorePlayerOne >= 26) { 
+
+			// Add highscore option when play alone 
+
+			playersArray[indexGame].score += 5;
+			winner(playersArray);
+			let winnerId = playersArray[0].id + 1; 
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+		} 
+
 		addRedBall.setAttribute("class", "addRedBall");
 		document.getElementById(`${scorePlayerOne}`).appendChild(addRedBall);
 
@@ -68,78 +88,102 @@ document.querySelector("#dice").addEventListener("click", () => {
 		let colorClass = document.getElementById(scorePlayerOne).className;
 		//for player object
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
+		differentGames(colorClass, playersArray[indexGame]);
+		indexGame++;
+		if (indexGame == partyPeopleGame) {
 			indexGame = 0;
 			return;
 		}
 	}
 
 	// player Two
-	else if(indexGame == 1 && indexGame !== partyPeopleGame){
+	else if (indexGame == 1 && indexGame !== partyPeopleGame) {
 		let child = document.querySelector(".addBrownBall");
 		document.getElementById(`${scorePlayerTwo}`).removeChild(child);
 
 		let addBrownBall = document.createElement("p");
 		addBrownBall.setAttribute("class", "addBrownBall");
-		
+
 		scorePlayerTwo += diceRoll;
+			
+		if (scorePlayerTwo >= 26) { 
+			playersArray[indexGame].score += 5;
+			winner(playersArray);
+			let winnerId = playersArray[0].id + 1; 
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+		} 
+
 		document.getElementById(`${scorePlayerTwo}`).appendChild(addBrownBall);
 		document.querySelector("#player-two").innerHTML = `Player two just threw ${diceRoll} and is on tile ${scorePlayerTwo}.`
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerTwo).className;
 		//for player object
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
+		differentGames(colorClass, playersArray[indexGame]);
+		indexGame++;
+		if (indexGame == partyPeopleGame) {
 			indexGame = 0;
 			return;
 		}
 	}
 
 	// player Three
-	else if(indexGame == 2 && indexGame !== partyPeopleGame){
+	else if (indexGame == 2 && indexGame !== partyPeopleGame) {
 		let child = document.querySelector(".addVioletBall");
 		document.getElementById(`${scorePlayerThree}`).removeChild(child);
 
 		let addVioletBall = document.createElement("p");
 		addVioletBall.setAttribute("class", "addVioletBall");
-		
+
 		scorePlayerThree += diceRoll;
+	
+		if (scorePlayerThree >= 26) { 
+			playersArray[indexGame].score += 5;
+			winner(playersArray);
+			let winnerId = playersArray[0].id + 1; 
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+		} 
+
 		document.getElementById(`${scorePlayerThree}`).appendChild(addVioletBall);
 		document.querySelector("#player-three").innerHTML = `Player three just threw ${diceRoll} and is on tile ${scorePlayerThree}.`
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerThree).className;
 		//for player object
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
+		differentGames(colorClass, playersArray[indexGame]);
+		indexGame++;
+		if (indexGame == partyPeopleGame) {
 			indexGame = 0;
 			return;
 		}
 	}
 
 	// player Four
-	else if(indexGame == 3 && indexGame !== partyPeopleGame){
+	else if (indexGame == 3 && indexGame !== partyPeopleGame) {
 		let child = document.querySelector(".addBlackBall");
 		document.getElementById(`${scorePlayerFour}`).removeChild(child);
 
 		let addBlackBall = document.createElement("p");
 		addBlackBall.setAttribute("class", "addBlackBall");
-		
+
 		scorePlayerFour += diceRoll;
+	
+		if (scorePlayerFour >= 26) { 
+			playersArray[indexGame].score += 5;
+			winner(playersArray);
+			let winnerId = playersArray[0].id + 1; 
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+		} 
+
 		document.getElementById(`${scorePlayerFour}`).appendChild(addBlackBall);
 		document.querySelector("#player-four").innerHTML = `Player four just threw ${diceRoll} and is on tile ${scorePlayerFour}.`
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerFour).className;
 		//for player object
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
+		differentGames(colorClass, playersArray[indexGame]);
+		indexGame++;
+		if (indexGame == partyPeopleGame) {
 			indexGame = 0;
 			return;
 		}
@@ -148,6 +192,6 @@ document.querySelector("#dice").addEventListener("click", () => {
 	console.log(playersArray);
 })
 
-document.querySelector("#reset").addEventListener("click", () =>{
+document.querySelector("#reset").addEventListener("click", () => {
 	location.reload();
 })
