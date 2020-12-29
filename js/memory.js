@@ -62,6 +62,7 @@ const memoryGame = (player) => {
     
         //create your board
         function createBoard() {
+            grid.innerHTML="";
         for (let i = 0; i < cardArray.length; i++) {
             let card = document.createElement('img')
             card.setAttribute('src', './images/images-memory-game/blank.png')
