@@ -17,8 +17,8 @@ let scorePlayerFour = 0;
 let indexGame = 0;
 const playersArray = [];
 
-function Player(id) {
-	this.id = id
+function Player() {
+	this.id = "";
 	this.score = 0;
 	this.position = 0;
 	//this.ball = {};
@@ -42,7 +42,7 @@ document.querySelector("#start").addEventListener("click", () => {
 		addBall.setAttribute("class", addBalls[i]);
 		document.getElementById('0').append(addBall);
 		//for player Object
-		let newPlayer = new Player(i);
+		let newPlayer = new Player();
 		newPlayer.ball = addBalls[i];
 		playersArray.push(newPlayer);
 	}
@@ -76,8 +76,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 
 			playersArray[indexGame].score += 5;
 			winner(playersArray);
-			let winnerId = playersArray[0].id + 1; 
-			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+			//let winnerId = playersArray[0].id + 1; 
+			let winnerId = indexGame + 1;
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[indexGame].score)
 		} 
 
 		addRedBall.setAttribute("class", "addRedBall");
@@ -87,6 +88,7 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerOne).className;
 		//for player object
+		playersArray[indexGame].id = "player-one";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
 		indexGame++;
@@ -109,8 +111,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		if (scorePlayerTwo >= 26) { 
 			playersArray[indexGame].score += 5;
 			winner(playersArray);
-			let winnerId = playersArray[0].id + 1; 
-			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+			//let winnerId = playersArray[0].id + 1; 
+			let winnerId = indexGame + 1;
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[indexGame].score)
 		} 
 
 		document.getElementById(`${scorePlayerTwo}`).appendChild(addBrownBall);
@@ -118,6 +121,7 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerTwo).className;
 		//for player object
+		playersArray[indexGame].id = "player-two";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
 		indexGame++;
@@ -140,8 +144,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		if (scorePlayerThree >= 26) { 
 			playersArray[indexGame].score += 5;
 			winner(playersArray);
-			let winnerId = playersArray[0].id + 1; 
-			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+			//let winnerId = playersArray[0].id + 1; 
+			let winnerId = indexGame + 1;
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[indexGame].score)
 		} 
 
 		document.getElementById(`${scorePlayerThree}`).appendChild(addVioletBall);
@@ -149,6 +154,7 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerThree).className;
 		//for player object
+		playersArray[indexGame].id = "player-three";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
 		indexGame++;
@@ -171,8 +177,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		if (scorePlayerFour >= 26) { 
 			playersArray[indexGame].score += 5;
 			winner(playersArray);
-			let winnerId = playersArray[0].id + 1; 
-			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[0].score)
+			//let winnerId = playersArray[0].id + 1; 
+			let winnerId = indexGame + 1;
+			alert("The game is finished! Player " + winnerId + " wins, with a score of " + playersArray[indexGame].score)
 		} 
 
 		document.getElementById(`${scorePlayerFour}`).appendChild(addBlackBall);
@@ -180,6 +187,7 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerFour).className;
 		//for player object
+		playersArray[indexGame].id = "player-four";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
 		indexGame++;

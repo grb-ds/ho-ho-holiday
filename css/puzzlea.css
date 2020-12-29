@@ -1,6 +1,6 @@
 #container{
     width: 850px;
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 20px;
     margin: 10px auto;
     padding: 10px;
@@ -9,7 +9,7 @@
 #piece-container{
     width: 408px;
     height:408px;
-    border: 1px solid black;
+    border: 1px solid white;
     float: left;
     text-align: center;
     font-size: 30px;
@@ -21,7 +21,7 @@
 #puzzle-container{
     width: 408px;
     height:408px;
-    border: 1px solid black;
+    border: 1px solid white;
     float: right;
     
 }
@@ -34,7 +34,7 @@ ul
 
 ul button{
     width:100px;
-    border: 1px solid black;
+    border: 1px solid white;
     font-size:20px;
     border-radius:5px;
     padding:5px;

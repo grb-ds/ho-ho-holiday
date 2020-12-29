@@ -9,7 +9,6 @@ const puzzleaGame = () => {
                 pieces += "<div style ='background-position:"+ left + "px " + top + "px;' class='piece'></div>";
             }
         }
-        console.log(pieces);
         $("#puzzle-container").html(pieces)
         $("#startbtn").click(function() {
             var pieces =  $("#puzzle-container div");
