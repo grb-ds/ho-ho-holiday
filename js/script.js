@@ -90,15 +90,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//for player object
 		playersArray[indexGame].id = "player-one";
 		playersArray[indexGame].currentTile = colorClass;
-<<<<<<< HEAD
-		differentGames(colorClass, playersArray[indexGame]);			
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
-=======
 		differentGames(colorClass, playersArray[indexGame]);
 		indexGame++;
 		if (indexGame == partyPeopleGame) {
->>>>>>> 0dc9adba35f5298b7761a18d73bdbc7e4fae3d00
 			indexGame = 0;
 			return;
 		}
@@ -163,13 +157,8 @@ document.querySelector("#dice").addEventListener("click", () => {
 		playersArray[indexGame].id = "player-three";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
-<<<<<<< HEAD
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
-=======
 		indexGame++;
 		if (indexGame == partyPeopleGame) {
->>>>>>> 0dc9adba35f5298b7761a18d73bdbc7e4fae3d00
 			indexGame = 0;
 			return;
 		}
@@ -201,13 +190,8 @@ document.querySelector("#dice").addEventListener("click", () => {
 		playersArray[indexGame].id = "player-four";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
-<<<<<<< HEAD
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
-=======
 		indexGame++;
 		if (indexGame == partyPeopleGame) {
->>>>>>> 0dc9adba35f5298b7761a18d73bdbc7e4fae3d00
 			indexGame = 0;
 			return;
 		}
