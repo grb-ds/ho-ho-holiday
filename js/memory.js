@@ -74,6 +74,38 @@ const memoryGame = (player) => {
         }
     
         //check for matches
+<<<<<<< HEAD
+        function checkForMatch() {
+        let cards = document.querySelectorAll('#memoryCards')
+        let optionOneId = cardsChosenId[0]
+        let optionTwoId = cardsChosenId[1]
+        
+        if(optionOneId == optionTwoId) {
+            cards[optionOneId].setAttribute('src', './images/images-memory-game/blank.png')
+            cards[optionTwoId].setAttribute('src', './images/images-memory-game/blank.png')
+            alert('You have clicked the same image!')
+        }
+        else if (cardsChosen[0] === cardsChosen[1]) {
+            alert('You found a match')
+            cards[optionOneId].setAttribute('src', './images/images-memory-game/white.png')
+            cards[optionTwoId].setAttribute('src', './images/images-memory-game/white.png')
+            cards[optionOneId].removeEventListener('click', flipCard)
+            cards[optionTwoId].removeEventListener('click', flipCard)
+            cardsWon.push(cardsChosen)
+        } else {
+            cards[optionOneId].setAttribute('src', './images/images-memory-game/blank.png')
+            cards[optionTwoId].setAttribute('src', './images/images-memory-game/blank.png')
+            alert('Sorry, try again')
+        }
+        cardsChosen = []
+        cardsChosenId = []
+        if (cardsWon.length === cardArray.length/2) {
+            alert('Congratulations! You found them all!');
+            player.score += scoreboard(player.currentTile);
+            console.log(document.getElementById(player.id).value);
+            document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
+        }
+=======
         const checkForMatch = () => {
             let cards = document.querySelectorAll('#memoryCards')
             let optionOneId = cardsChosenId[0]
@@ -103,6 +135,7 @@ const memoryGame = (player) => {
                 player.score += scoreboard(player.currentTile);
                 document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
             }
+>>>>>>> 0dc9adba35f5298b7761a18d73bdbc7e4fae3d00
         }
     
         //flip your card
