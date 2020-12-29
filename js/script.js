@@ -157,8 +157,8 @@ document.querySelector("#dice").addEventListener("click", () => {
 		playersArray[indexGame].id = "player-three";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
+		indexGame++;
+		if (indexGame == partyPeopleGame) {
 			indexGame = 0;
 			return;
 		}
@@ -190,8 +190,8 @@ document.querySelector("#dice").addEventListener("click", () => {
 		playersArray[indexGame].id = "player-four";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);
-		indexGame ++;
-		if (indexGame == partyPeopleGame){
+		indexGame++;
+		if (indexGame == partyPeopleGame) {
 			indexGame = 0;
 			return;
 		}
