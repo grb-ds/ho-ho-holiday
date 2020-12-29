@@ -6,7 +6,7 @@ import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 import { puzzleGame } from "../js/puzzle.js"
 import { scoreboard } from "../js/scores.js";
-import { puzzleaGame } from "../js/puzzlea.js"
+import { puzzleaGame } from "../js/puzzlea.js";
 
 
 
@@ -216,7 +216,7 @@ const orangeGame = (player) => {
 
 const yellowGame = (player) => {
     displayModal(myModal4);
-    puzzleGame(player);
+    puzzleaGame(player);
 }
 
 
