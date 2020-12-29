@@ -51,17 +51,15 @@ Like in the LOTR movies, you have to find the answer to these riddles. These rid
 
 ## 🐜  Bugs to fix 
 
-*  When starting a new guessing game, riddle game or memory game; the data of the previous game is still remembered.
+*  When starting a new guessing game or riddle game ; the data of the previous game is still remembered.
 
 ## ✅ To Do's
 
-* Disable game for smaller screens
 * Add more animations
 * Change alert boxes into a pop-up
 * Refactor JS code
 * Add highscores remembered by browser
 * Add timer for memory game and puzzle game
-* Input players; don't allow letters or numbers above 4
 
 ## 💬 Developer thoughts and learnings of this project
 
