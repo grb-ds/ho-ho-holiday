@@ -101,7 +101,7 @@ const memoryGame = (player) => {
             alert('Congratulations! You found them all!');
             document.querySelector("#myModal2").style.display = 'none';
             player.score += scoreboard(player.currentTile);
-            
+            document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
         }
         }
     

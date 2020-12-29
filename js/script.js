@@ -66,8 +66,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerOne).className;
 		//for player object
+		playersArray[indexGame].id = "player-one";
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
+		differentGames(colorClass, playersArray[indexGame]);			
 		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
@@ -89,6 +90,7 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerTwo).className;
 		//for player object
+		playersArray[indexGame].id = "player-two";
 		playersArray[indexGame].currentTile = colorClass;
 		differentGames(colorClass, playersArray[indexGame]);	
 		indexGame ++;
@@ -112,8 +114,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerThree).className;
 		//for player object
+		playersArray[indexGame].id = "player-three";
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
+		differentGames(colorClass, playersArray[indexGame]);
 		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;
@@ -135,8 +138,9 @@ document.querySelector("#dice").addEventListener("click", () => {
 		//indexGame ++;
 		let colorClass = document.getElementById(scorePlayerFour).className;
 		//for player object
+		playersArray[indexGame].id = "player-four";
 		playersArray[indexGame].currentTile = colorClass;
-		differentGames(colorClass, playersArray[indexGame]);	
+		differentGames(colorClass, playersArray[indexGame]);
 		indexGame ++;
 		if (indexGame == partyPeopleGame){
 			indexGame = 0;

@@ -25,17 +25,19 @@ const winOrLose = (answer, modal, guesses, player) => {
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
             modal.style.display = "none";
-            player.score += scoreboard(player.currentTile);
+            player.score += scoreboard(player.currentTile); 
+            document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
+           
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
             modal.style.display = "none";
             player.score -= scoreboard(player.currentTile);
+            document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
         } else {
             alert("You have " + (4 - guesses) + " left.")
             guesses++;
-        }
+        }               
     });
-
 };
 
 export {
@@ -53,10 +55,13 @@ const guessRiddleAnswer = (answer, modal, guesses, player) => {
             alert("You win! Nice, now you get 3 points!");
             modal.style.display = "none";
             player.score += scoreboard(player.currentTile);
+            document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
+
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
             modal.style.display = "none";
             player.score -= scoreboard(player.currentTile);
+            document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
         } else {
             alert("You have " + (4 - guesses) + " left.")
             guesses++;

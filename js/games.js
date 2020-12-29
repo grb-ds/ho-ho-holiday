@@ -200,6 +200,7 @@ const redgame = (player) => {
     randomPictureEvil(evilImage);   
     displayModal(myModal1);
     player.score -= scoreboard(player.currentTile); //always lost 2 points
+    document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
 }
 
 const bluegame = (player) => {
