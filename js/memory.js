@@ -100,10 +100,8 @@ const memoryGame = (player) => {
         if (cardsWon.length === cardArray.length/2) {
             alert('Congratulations! You found them all!');
             player.score += scoreboard(player.currentTile);
-<<<<<<< HEAD
+            console.log(document.getElementById(player.id).value);
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
-=======
->>>>>>> fe5ea99ff13fbb9ffc367f8843c925c3ba93fc77
         }
         }
     
