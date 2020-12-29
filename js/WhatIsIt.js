@@ -27,12 +27,14 @@ const winOrLose = (answer, modal, guesses, player) => {
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
             player.score += scoreboard(player.currentTile); 
+            console.log(document.getElementById(player.id).innerText);
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;           
             document.getElementById("guess").disabled = true;
             document.getElementById("submit").disabled = true;
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
             player.score -= scoreboard(player.currentTile);
+            console.log(document.getElementById(player.id).innerText);
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
             document.getElementById("guess").disabled = true;
             document.getElementById("submit").disabled = true;
@@ -60,12 +62,14 @@ const guessRiddleAnswer = (answer, modal, guesses, player) => {
         if (guess == answer) {
             alert("You win! Nice, now you get 3 points!");
             player.score += scoreboard(player.currentTile);
+            console.log(document.getElementById(player.id).innerText);
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
             document.getElementById("guessRiddle").disabled = true;
             document.getElementById("submitRiddle").disabled = true;
         } else if (guesses > 3) {
             alert("You lose, the answer was " + answer + ". Sadly, you don't get points!");
             player.score -= scoreboard(player.currentTile);
+            console.log(document.getElementById(player.id).innerText);
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
             document.getElementById("guessRiddle").disabled = true;
             document.getElementById("submitRiddle").disabled = true;

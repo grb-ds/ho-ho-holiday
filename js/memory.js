@@ -53,23 +53,24 @@ const memoryGame = (player) => {
         }
     ]
     
-        cardArray.sort(() => 0.5 - Math.random())
+        cardArray.sort(() => 0.5 - Math.random());
     
-        const grid = document.querySelector('.grid')
-        let cardsChosen = []
-        let cardsChosenId = []
-        let cardsWon = []
+        let grid = document.querySelector('.grid');
+        let cardsChosen = [];
+        let cardsChosenId = [];
+        let cardsWon = [];
     
         //create your board
-        function createBoard() {
-        for (let i = 0; i < cardArray.length; i++) {
-            let card = document.createElement('img')
-            card.setAttribute('src', './images/images-memory-game/blank.png')
-            card.setAttribute('data-id', i)
-            card.setAttribute('id', 'memoryCards')
-            card.addEventListener('click', flipCard)
-            grid.appendChild(card)
-        }
+        const createBoard = () => {
+            grid.innerHTML = "";
+            for (let i = 0; i < cardArray.length; i++) {
+                let card = document.createElement('img')
+                card.setAttribute('src', './images/images-memory-game/blank.png')
+                card.setAttribute('data-id', i)
+                card.setAttribute('id', 'memoryCards')
+                card.addEventListener('click', flipCard)
+                grid.appendChild(card)
+            }
         }
     
         //check for matches
@@ -100,20 +101,22 @@ const memoryGame = (player) => {
         if (cardsWon.length === cardArray.length/2) {
             alert('Congratulations! You found them all!');
             player.score += scoreboard(player.currentTile);
+            console.log(document.getElementById(player.id).value);
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
         }
         }
     
         //flip your card
         function flipCard () {
-        let cardId = this.getAttribute('data-id')
-        cardsChosen.push(cardArray[cardId].name)
-        cardsChosenId.push(cardId)
-        this.setAttribute('src', cardArray[cardId].img)
-        if (cardsChosen.length ===2) {
-            setTimeout(checkForMatch, 500)
+            let cardId = this.getAttribute('data-id')
+            cardsChosen.push(cardArray[cardId].name)
+            cardsChosenId.push(cardId)
+            this.setAttribute('src', cardArray[cardId].img)
+            if (cardsChosen.length ===2) {
+                setTimeout(checkForMatch, 500)
+            }
         }
-        } 
+
         createBoard()
 }
 
