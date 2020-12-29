@@ -32,6 +32,7 @@ document.querySelector("#start").addEventListener("click", () => {
 document.querySelector("#dice").addEventListener("click", () => {
 	
 	let partyPeopleGame = Number(partyPeople[0]);
+	
 	let diceRoll = Math.floor(Math.random() * (6 - 1) + 1);
 	rollDice(diceRoll);
 	

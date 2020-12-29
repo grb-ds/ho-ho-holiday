@@ -16,7 +16,7 @@ const puzzleaGame = () => {
             pieces.each(function() {
                 var leftPosition = Math.floor(Math.random()*290) + "px";
                 var topPosition = Math.floor(Math.random()*290) + "px";
-            $(this).css({
+            $(this).addClass("draggablePiece").css({
                 position:"absolute",
                 left: leftPosition,
                 top: topPosition,
@@ -24,13 +24,43 @@ const puzzleaGame = () => {
             });
             $("#piece-container").append($(this));
         });
-        for(var i=0, top=0;i<rows;i++, top-=100)
+        var emptyString="";
+        for(var i=0;i<rows;i++)
         {
-            pieces+= "<div style='background-image:none;' class='piece'><//div>"
+            
+            for(var j=0;j<columns;j++)
+            {
+                emptyString+= "<div style='background-image:none;'class='piece droppableSpace'></div>"
+            }
         }
-        $("#puzzleContainer").html(pieces);
+        
+        $("#puzzle-container").html(emptyString);
+        $(this).hide();
+        $("#resetbtn").show()
+        implementLogic()
         });
+        function implementLogic()
+        {
+           $(".draggablePiece").draggable(); 
+           $(".droppableSpace").droppable({
+               hoverClass:"ui-state-hight",
+              drop:function(event,ui)
+                {
+                  var draggableElement = ui.draggable;
+                  var droppedOn = $(this);
+                  droppedOn.addClass("piecePresent");
+                  $(draggableElement)
+                    .addClass("droppedPiece")
+                    .css({
+                        top:0,
+                        left:0,
+                        position:"relative"
+                    }).appendTo(droppedOn);
+                }
+           });
+        }
     });
+    
 }
 
 export { puzzleaGame }
