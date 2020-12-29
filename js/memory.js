@@ -99,9 +99,11 @@ const memoryGame = (player) => {
         cardsChosenId = []
         if (cardsWon.length === cardArray.length/2) {
             alert('Congratulations! You found them all!');
-            document.querySelector("#myModal2").style.display = 'none';
             player.score += scoreboard(player.currentTile);
+<<<<<<< HEAD
             document.getElementById(player.id).innerHTML += ` With ${player.score} points`;
+=======
+>>>>>>> fe5ea99ff13fbb9ffc367f8843c925c3ba93fc77
         }
         }
     

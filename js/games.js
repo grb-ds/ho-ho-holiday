@@ -6,7 +6,8 @@ import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
 import { puzzleGame } from "../js/puzzle.js"
 import { scoreboard } from "../js/scores.js";
-import { puzzleaGame } from "../js/puzzlea.js"
+import { puzzleaGame } from "../js/puzzlea.js";
+
 
 
 
@@ -189,6 +190,7 @@ document.querySelector(".modal-close-4").addEventListener("click", () => {
 });
 
 const greengame = (player) => {
+    document.querySelector("#guess").value = "";
     let guesses = 0;
     let randomImage = randomPicture(images);
     displayModal(myModal);
@@ -209,6 +211,7 @@ const bluegame = (player) => {
 }
 
 const orangeGame = (player) => {
+    document.querySelector("#guessRiddle").value = "";
     let guesses = 0;
     let randomRiddle = getRandomRiddle(riddles);
     displayModal(myModal3);
@@ -217,7 +220,7 @@ const orangeGame = (player) => {
 
 const yellowGame = (player) => {
     displayModal(myModal4);
-    puzzleGame(player);
+    puzzleaGame(player);
 }
 
 
@@ -243,3 +246,16 @@ const differentGames = (element, player) => {
 };
 
 export { differentGames }
+
+
+
+
+const winner = (arrayPlayers) => { 
+
+    arrayPlayers.sort((a, b) => { return b.score - a.score }); 
+
+    return arrayPlayers;
+
+}
+
+export { winner }
