@@ -88,7 +88,8 @@ td {
 }
 
 .topnav {
-  overflow: hidden;
+  overflow: auto;
+  width: 100%;
   background-color: rgb(10, 10, 10);
 }
 

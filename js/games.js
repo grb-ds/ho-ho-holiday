@@ -4,7 +4,7 @@ import { winOrLose } from "../js/WhatIsIt.js"
 import { memoryGame } from "../js/memory.js";
 import { getRandomRiddle } from "../js/riddles.js"
 import { guessRiddleAnswer } from "../js/WhatIsIt.js"
-import { puzzleGame } from "../js/puzzle.js"
+// import { puzzleGame } from "../js/puzzle.js"
 import { scoreboard } from "../js/scores.js";
 import { puzzleaGame } from "../js/puzzlea.js";
 
