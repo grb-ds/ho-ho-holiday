@@ -1,4 +1,6 @@
-const memoryGame = () => {
+import { scoreboard } from "../js/scores.js";
+
+const memoryGame = (player) => {
         //card options
         const cardArray = [
         {
@@ -97,7 +99,7 @@ const memoryGame = () => {
         cardsChosenId = []
         if (cardsWon.length === cardArray.length/2) {
             alert('Congratulations! You found them all!');
-            document.querySelector("#myModal2").style.display = 'none';
+            player.score += scoreboard(player.currentTile);
         }
         }
     
